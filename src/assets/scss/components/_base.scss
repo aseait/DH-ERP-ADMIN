@@ -1,0 +1,312 @@
+.md-page {
+  background: var(--md-bg);
+  min-height: 100%;
+  font-size: var(--md-font);
+  line-height: 1.55;
+  color: var(--md-text);
+
+  --md-lock-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2398A2B3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='11' width='18' height='11' rx='2' ry='2'/%3E%3Cpath d='M7 11V7a5 5 0 0 1 10 0v4'/%3E%3C/svg%3E");
+}
+
+.md-container {
+  padding: 18px 18px 40px;
+}
+
+.md-topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.md-alert {
+  border-radius: var(--md-radius-md);
+}
+
+.md-shell {
+  border: 1px solid var(--md-border);
+  box-shadow: var(--md-shadow);
+  border-radius: var(--md-radius-xl);
+  overflow: hidden;
+}
+
+.md-shell__body {
+  padding: 18px;
+}
+
+.md-section {
+  margin-top: 14px;
+  border-radius: var(--md-radius-xl);
+  border: 1px solid var(--md-border);
+  overflow: hidden;
+  background: var(--md-card);
+}
+
+.md-section__body {
+  background: var(--md-card);
+  padding: 14px;
+}
+
+.md-sectionHead {
+  background: var(--md-card);
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--md-border);
+}
+
+.md-sectionHead__toggle {
+  appearance: none;
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.md-sectionHead__title {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--md-text);
+}
+
+.md-sectionHead__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.md-chevron {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--md-muted);
+  border-bottom: 2px solid var(--md-muted);
+  transform: rotate(-45deg);
+  transition: transform 0.15s ease;
+  margin-left: 2px;
+}
+
+.md-chevron.open {
+  transform: rotate(45deg);
+}
+
+.md-item {
+  border: 1px solid var(--md-border);
+  border-radius: var(--md-radius-lg);
+  padding: 12px;
+  background: var(--md-soft);
+  margin-bottom: 12px;
+}
+
+.md-item__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.md-item__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  color: var(--md-text);
+}
+
+.md-item__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.md-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 1200px) {
+  .md-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .md-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.md-field__label {
+  font-size: 13px;
+  color: var(--md-muted);
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.md-field__hint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--md-muted);
+}
+
+.md-control {
+  border-radius: var(--md-radius-sm) !important;
+  border: 1px solid var(--md-border-strong) !important;
+  background-color: #fff !important;
+  height: 44px;
+  font-size: 15px !important;
+  padding: 10px 12px !important;
+}
+
+.md-control:focus {
+  border-color: rgba(21, 112, 239, 0.55) !important;
+  box-shadow: 0 0 0 4px rgba(21, 112, 239, 0.12) !important;
+}
+
+.md-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.md-badge {
+  font-weight: 800 !important;
+  border-radius: 999px !important;
+  font-size: 13px !important;
+}
+.md-badge--big {
+  padding: 7px 12px !important;
+  font-size: 14px !important;
+}
+
+.md-noteDanger {
+  font-size: 12px;
+  color: var(--md-danger);
+  font-weight: 800;
+  background: rgba(240, 68, 56, 0.08);
+  border: 1px solid rgba(240, 68, 56, 0.22);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.md-btn {
+  border-radius: var(--md-radius-sm) !important;
+  font-weight: 800 !important;
+  padding: 10px 14px !important;
+  font-size: 14px !important;
+}
+
+.md-btn--primary {
+  background: var(--md-primary) !important;
+  border-color: var(--md-primary) !important;
+}
+
+.md-btn--ghost {
+  background: transparent !important;
+  border: 1px solid rgba(16, 24, 40, 0.16) !important;
+  color: var(--md-text) !important;
+}
+
+.md-btn--soft {
+  background: var(--md-primary-soft) !important;
+  border: 1px solid rgba(46, 144, 250, 0.2) !important;
+  color: var(--md-primary) !important;
+}
+
+.md-btn--danger {
+  background: rgba(240, 68, 56, 0.08) !important;
+  border: 1px solid rgba(240, 68, 56, 0.2) !important;
+  color: #d92d20 !important;
+}
+
+.md-btn--compact {
+  padding: 6px 10px !important;
+  font-size: 13px !important;
+  line-height: 1.2;
+  height: 34px;
+}
+
+.md-link {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: var(--md-primary);
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.md-fileMini {
+  margin-top: 6px;
+}
+.md-fileMini__meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+.md-money {
+  font-weight: 900;
+  color: var(--md-primary);
+}
+
+.md-mono {
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+}
+
+.md-field__control .md-control:disabled,
+.md-field__control .md-control[readonly] {
+  cursor: not-allowed;
+}
+.md-field__control .md-control:disabled {
+  background-color: #f9fafb !important;
+  color: #667085 !important;
+}
+
+.md-field:hover .md-control:disabled,
+.md-field:hover .md-control[readonly] {
+  background-image: var(--md-lock-icon);
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 16px;
+  padding-right: 42px;
+}
+
+/* ─── Dark mode ────────────────────────────────────────────────────────────── */
+[data-bs-theme="dark"] {
+  .md-control {
+    background-color: #22272e !important;
+    color: #e9ecef !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+  }
+  .md-control:focus {
+    border-color: rgba(64, 158, 255, 0.6) !important;
+    box-shadow: 0 0 0 4px rgba(64, 158, 255, 0.12) !important;
+  }
+  .md-field__control .md-control:disabled {
+    background-color: #1a1d21 !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+  }
+  .md-btn--ghost {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+  }
+
+  // Notification RowCard uses Bootstrap's bg-white — not theme-aware in BS5
+  .bg-white {
+    background-color: #22272e !important;
+  }
+
+  // Tag badges: badge bg-light text-dark — not theme-aware in BS5
+  .badge.bg-light {
+    background-color: rgba(255, 255, 255, 0.10) !important;
+    color: #adbac7 !important;
+  }
+}

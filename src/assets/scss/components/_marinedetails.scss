@@ -1,0 +1,1006 @@
+/* =========================
+   Marine Details - Professional UI
+   ========================= */
+
+:root {
+  --md-bg: #f6f8fb;
+  --md-card: #ffffff;
+  --md-soft: #fbfcfe;
+
+  --md-text: #101828;
+  --md-muted: #667085;
+
+  --md-border: rgba(16, 24, 40, 0.08);
+  --md-border-strong: rgba(16, 24, 40, 0.12);
+
+  --md-primary: #1570ef;
+  --md-primary-soft: rgba(46, 144, 250, 0.12);
+
+  --md-danger: #b42318;
+
+  --md-radius-xl: 16px;
+  --md-radius-lg: 14px;
+  --md-radius-md: 12px;
+  --md-radius-sm: 10px;
+
+  --md-shadow: 0 10px 28px rgba(16, 24, 40, 0.08);
+
+  // Match the app-wide base ($font-size-base: 0.825rem) so the order-detail
+  // pages read at the same size as every other page.
+  --md-font: 0.825rem;
+  --md-font-sm: 12px;
+  --md-font-xs: 11px;
+}
+
+/* Page */
+.md-page {
+  background: var(--md-bg);
+  min-height: 100%;
+  font-size: var(--md-font);
+  line-height: 1.55;
+  color: var(--md-text);
+}
+
+.md-container {
+  // Top padding mirrors .page-content's header-clearing calc so the first
+  // element (the Back button row) doesn't render tucked under the fixed
+  // navbar — this wrapper is used instead of .page-content on the detail
+  // pages (Marine/Air/Truck), which never got that same clearance.
+  padding: calc(#{$header-height} + #{$grid-gutter-width}) 18px 40px;
+}
+
+/* Top bar */
+.md-topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.md-actionsRow {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  background: var(--md-soft);
+  border: 1px solid var(--md-border);
+  border-radius: var(--md-radius-md);
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 10px 12px;
+
+    .md-btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    > div {
+      display: flex !important;
+      justify-content: flex-start;
+      gap: 8px;
+    }
+  }
+}
+
+/* Alert */
+.md-alert {
+  border-radius: var(--md-radius-md);
+}
+
+/* Shell */
+.md-shell {
+  border: 1px solid var(--md-border);
+  box-shadow: var(--md-shadow);
+  border-radius: var(--md-radius-xl);
+  overflow: hidden;
+}
+
+.md-shell__body {
+  padding: 18px;
+}
+
+/* Summary */
+.md-summary {
+  display: grid;
+  gap: 10px;
+  padding: 14px 14px 16px;
+  border: 1px solid var(--md-border);
+  border-radius: var(--md-radius-lg);
+  background: var(--md-card);
+}
+
+.md-summary__title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--md-text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.md-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  background: var(--md-primary-soft);
+  color: var(--md-primary);
+}
+
+.md-summary__meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 1100px) {
+  .md-summary__meta {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .md-summary__meta {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Pills */
+.md-pill {
+  border: 1px solid var(--md-border);
+  border-radius: var(--md-radius-md);
+  padding: 10px 12px;
+  background: var(--md-soft);
+}
+
+.md-pill__label {
+  font-size: 13px;
+  color: var(--md-muted);
+  margin-bottom: 4px;
+}
+
+.md-pill__value {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--md-text);
+}
+
+.md-mono {
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+}
+
+/* Steps */
+.md-steps {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: 6px;
+}
+@media (max-width: 900px) {
+  .md-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+.md-step {
+  border: 1px solid var(--md-border);
+  background: var(--md-card);
+  border-radius: var(--md-radius-lg);
+  padding: 6px 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.md-step__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #d0d5dd;
+  flex: 0 0 auto;
+}
+.md-step.is-active .md-step__dot {
+  background: var(--md-primary);
+}
+.md-step.is-done .md-step__dot {
+  background: #12b76a;
+}
+
+.md-step__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--md-text);
+}
+.md-step__desc {
+  font-size: 11px;
+  color: var(--md-muted);
+  margin-top: 1px;
+}
+
+/* Section */
+.md-section {
+  margin-top: 14px;
+  border-radius: var(--md-radius-xl);
+  border: 1px solid var(--md-border);
+  overflow: hidden;
+  background: var(--md-card);
+}
+
+.md-section__body {
+  background: var(--md-card);
+  padding: 14px;
+}
+
+.md-sectionHead {
+  background: var(--md-card);
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--md-border);
+}
+
+.md-sectionHead__toggle {
+  appearance: none;
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.md-sectionHead__title {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--md-text);
+}
+
+.md-sectionHead__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Chevron */
+.md-chevron {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--md-muted);
+  border-bottom: 2px solid var(--md-muted);
+  transform: rotate(-45deg);
+  transition: transform 0.15s ease;
+  margin-left: 2px;
+}
+.md-chevron.open {
+  transform: rotate(45deg);
+}
+
+/* Item card */
+.md-item {
+  border: 1px solid var(--md-border);
+  border-radius: var(--md-radius-lg);
+  padding: 12px;
+  background: var(--md-soft);
+  margin-bottom: 12px;
+}
+
+.md-item__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.md-item__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  color: var(--md-text);
+}
+
+.md-item__actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Grid */
+.md-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 12px;
+}
+.md-grid--compact {
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+}
+
+.md-field--wide {
+  grid-column: 1 / -1;
+}
+@media (max-width: 1200px) {
+  .md-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .md-grid,
+  .md-grid--compact {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Compact modifier — reduces padding/height for dense sections (e.g. Pickup)
+.md-section--compact {
+  .md-section__body { padding: 10px 12px; }
+
+  .md-item {
+    padding: 8px 10px;
+    margin-bottom: 8px;
+  }
+
+  .md-item__head { margin-bottom: 6px; }
+
+  .md-grid { gap: 8px; }
+
+  .md-field__label {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+
+  .md-control {
+    height: 34px !important;
+    font-size: 13px !important;
+    padding: 4px 10px !important;
+  }
+
+  textarea.md-control { height: auto !important; }
+}
+
+.md-field__label {
+  font-size: 13px;
+  color: var(--md-muted);
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.md-field__hint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--md-muted);
+}
+
+.md-control {
+  border-radius: var(--md-radius-sm) !important;
+  border: 1px solid var(--md-border-strong) !important;
+  background-color: #fff !important;
+  height: 44px;
+  font-size: 15px !important;
+  padding: 10px 12px !important;
+}
+
+textarea.md-control {
+  height: auto;
+  min-height: 80px;
+  resize: vertical;
+}
+
+.md-control:focus {
+  border-color: rgba(21, 112, 239, 0.55) !important;
+  box-shadow: 0 0 0 4px rgba(21, 112, 239, 0.12) !important;
+}
+
+.md-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Badges */
+.md-badge {
+  font-weight: 800 !important;
+  border-radius: 999px !important;
+  font-size: 13px !important;
+}
+.md-badge--big {
+  padding: 7px 12px !important;
+  font-size: 14px !important;
+}
+
+/* Reject note pill */
+.md-noteDanger {
+  font-size: 12px;
+  color: var(--md-danger);
+  font-weight: 800;
+  background: rgba(240, 68, 56, 0.08);
+  border: 1px solid rgba(240, 68, 56, 0.22);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* Buttons */
+.md-btn {
+  border-radius: var(--md-radius-sm) !important;
+  font-weight: 800 !important;
+  padding: 10px 14px !important;
+  font-size: 14px !important;
+}
+
+.md-btn--primary {
+  background: var(--md-primary) !important;
+  border-color: var(--md-primary) !important;
+  transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease !important;
+  &:hover, &:focus-visible {
+    background: #1263d1 !important;
+    border-color: #1263d1 !important;
+    box-shadow: 0 2px 8px rgba(21, 112, 239, 0.35) !important;
+  }
+}
+
+.md-btn--ghost {
+  background: transparent !important;
+  border: 1px solid rgba(16, 24, 40, 0.16) !important;
+  color: var(--md-text) !important;
+  transition: background 0.15s ease, border-color 0.15s ease !important;
+  &:hover, &:focus-visible {
+    background: rgba(16, 24, 40, 0.05) !important;
+    border-color: rgba(16, 24, 40, 0.28) !important;
+  }
+}
+
+.md-btn--soft {
+  background: var(--md-primary-soft) !important;
+  border: 1px solid rgba(46, 144, 250, 0.2) !important;
+  color: var(--md-primary) !important;
+  transition: background 0.15s ease, border-color 0.15s ease !important;
+  &:hover, &:focus-visible {
+    background: rgba(46, 144, 250, 0.2) !important;
+    border-color: rgba(46, 144, 250, 0.35) !important;
+  }
+}
+
+.md-btn--danger {
+  background: rgba(240, 68, 56, 0.08) !important;
+  border: 1px solid rgba(240, 68, 56, 0.2) !important;
+  color: #d92d20 !important;
+  transition: background 0.15s ease, border-color 0.15s ease !important;
+  &:hover, &:focus-visible {
+    background: rgba(240, 68, 56, 0.16) !important;
+    border-color: rgba(240, 68, 56, 0.35) !important;
+  }
+}
+
+/* Links */
+.md-link {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: var(--md-primary);
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.md-link--file {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+/* File mini blocks */
+.md-fileMini {
+  margin-top: 6px;
+}
+.md-fileMini__meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+.md-money {
+  font-weight: 900;
+  color: var(--md-primary);
+}
+
+/* Files */
+.md-filesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 12px;
+}
+@media (max-width: 900px) {
+  .md-filesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.md-fileGroup {
+  border: 1px solid var(--md-border);
+  background: var(--md-soft);
+  border-radius: var(--md-radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+}
+
+.md-fileGroup__head {
+  padding: 12px;
+  background: var(--md-card);
+  border-bottom: 1px solid var(--md-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.md-fileGroup__title {
+  font-weight: 900;
+  color: var(--md-text);
+  font-size: 15px;
+}
+
+.md-fileGroup__body {
+  padding: 10px 12px;
+  flex: 1;
+}
+
+.md-fileRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(16, 24, 40, 0.14);
+}
+.md-fileRow:last-child {
+  border-bottom: none;
+}
+
+.md-fileRow__left {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  flex: 1;
+}
+.md-fileRow__left .md-link {
+  text-align: left;
+  word-break: break-word;
+}
+
+.md-fileRow__actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+
+  .btn {
+    min-width: 64px;
+  }
+}
+
+/* Empty state (professional) */
+.md-empty {
+  display: grid;
+  place-items: center;
+  gap: 6px;
+  padding: 22px 10px;
+  color: var(--md-muted);
+  text-align: center;
+}
+.md-empty__icon {
+  font-size: 22px;
+  opacity: 0.85;
+}
+.md-empty__text {
+  font-weight: 700;
+}
+
+/* Modal */
+.md-modal .modal-content {
+  border-radius: var(--md-radius-xl);
+  border: 1px solid var(--md-border);
+  box-shadow: var(--md-shadow);
+}
+
+.md-modal__header {
+  font-weight: 900;
+}
+
+.md-modal__body {
+  padding-top: 8px;
+}
+
+.md-modalText__line {
+  color: var(--md-text);
+  font-weight: 700;
+}
+
+.md-radioRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.md-radio {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--md-border);
+  border-radius: var(--md-radius-md);
+  padding: 12px 12px;
+  background: var(--md-soft);
+  cursor: pointer;
+  user-select: none;
+  font-weight: 800;
+  color: var(--md-text);
+}
+
+.md-radio input {
+  transform: scale(1.05);
+}
+
+.md-radio.is-active {
+  border-color: rgba(21, 112, 239, 0.45);
+  box-shadow: 0 0 0 4px rgba(21, 112, 239, 0.1);
+  background: #ffffff;
+}
+
+.md-rejectBox {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(16, 24, 40, 0.16);
+}
+
+.md-rejectBox__label {
+  color: var(--md-muted);
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.md-modal__footer {
+  gap: 10px;
+}
+
+.md-btn--compact {
+  padding: 6px 10px !important;
+  font-size: 13px !important;
+  line-height: 1.2;
+  height: 34px;
+}
+
+.md-field__control .md-control:disabled,
+.md-field__control .md-control[readonly] {
+  cursor: not-allowed;
+}
+
+/* optional: make disabled look a bit more "readonly" */
+.md-field__control .md-control:disabled {
+  background-color: #f9fafb !important;
+  color: #667085 !important;
+}
+
+/* Lock icon (SVG) as a CSS variable */
+.md-page {
+  --md-lock-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2398A2B3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='11' width='18' height='11' rx='2' ry='2'/%3E%3Cpath d='M7 11V7a5 5 0 0 1 10 0v4'/%3E%3C/svg%3E");
+}
+
+/* Show icon only when user hovers the whole field */
+.md-field:hover .md-control:disabled,
+.md-field:hover .md-control[readonly] {
+  background-image: var(--md-lock-icon);
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 16px;
+  padding-right: 42px; /* make room for icon */
+}
+
+.md-radio {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+
+  &.is-disabled {
+    opacity: 0.6;
+  }
+
+  &__opt {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+
+.md-center-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  min-width: 360px;
+  max-width: 520px;
+  text-align: center;
+}
+
+/* Hide browser placeholder text (mm/dd/yyyy) on empty date/datetime inputs */
+.md-date-empty::-webkit-datetime-edit { color: transparent; }
+.md-date-empty::-webkit-datetime-edit-fields-wrapper { color: transparent; }
+.md-date-empty:focus::-webkit-datetime-edit,
+.md-date-empty:focus::-webkit-datetime-edit-fields-wrapper { color: inherit; }
+
+/* ─── Dark mode ────────────────────────────────────────────────────────────── */
+[data-bs-theme="dark"] {
+  --md-bg: #1a1d21;
+  --md-card: #22272e;
+  --md-soft: #1e2329;
+
+  --md-text: #e9ecef;
+  --md-muted: #8b949e;
+
+  --md-border: rgba(255, 255, 255, 0.08);
+  --md-border-strong: rgba(255, 255, 255, 0.12);
+
+  --md-primary: #409eff;
+  --md-primary-soft: rgba(64, 158, 255, 0.15);
+
+  --md-danger: #f87171;
+
+  --md-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+
+  .md-control {
+    background-color: #22272e !important;
+    color: #e9ecef !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+  }
+
+  .md-control:focus {
+    border-color: rgba(64, 158, 255, 0.6) !important;
+    box-shadow: 0 0 0 4px rgba(64, 158, 255, 0.12) !important;
+  }
+
+  .md-field__control .md-control:disabled {
+    background-color: #1a1d21 !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+  }
+
+  .md-btn--ghost {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+  }
+
+  .md-actionsRow {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .md-step__dot { background: rgba(255, 255, 255, 0.15); }
+
+  .md-radio {
+    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.04);
+    &.is-active {
+      background: rgba(64, 158, 255, 0.08);
+    }
+  }
+
+  .md-fileRow {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .md-noteDanger {
+    background: rgba(240, 68, 56, 0.12);
+    border-color: rgba(240, 68, 56, 0.3);
+  }
+
+  // Fee section dark overrides
+  .fee-section {
+    &__table {
+      color: #e9ecef;
+      --bs-table-bg: #22272e;
+      --bs-table-border-color: rgba(255, 255, 255, 0.08);
+      --bs-table-striped-bg: #1e2329;
+
+      thead.table-light {
+        --bs-table-bg: #2d333b;
+        color: #c9d1d9;
+      }
+    }
+
+    &__notes {
+      background: #2d333b;
+      color: #c9d1d9;
+    }
+
+    &__row--editing { background: #2a2800 !important; }
+    &__row--done    { background: #102010 !important; }
+    &__row--default { background: #22272e !important; }
+  }
+}
+
+// ── Fee Section — Payment Approval + TOLL Fee tables ──────────────────────
+.fee-section {
+  &__scroll { overflow-x: auto; }
+  &__info   { font-size: 14px; }
+
+  &__table {
+    font-size: 14px;
+    .badge { font-size: 12px; }
+  }
+
+  &__amount { font-weight: 600; }
+
+  &__notes {
+    display: block;
+    max-width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #f5f7fa;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: default;
+    &--help { cursor: help; }
+  }
+
+  &__link  { font-size: 13px; }
+  &__close { font-size: 9px; }
+
+  &__row--editing { background: #fffdf6; }
+  &__row--done    { background: #f8fff8; }
+  &__row--default { background: #fcfdff; }
+
+  &__submit { min-width: 140px; }
+}
+
+.pay-table  { min-width: 1400px; }
+.toll-table { min-width: 2200px; }
+
+// react-select sized to match Bootstrap form-control-sm
+.rs-sm {
+  .rs__control {
+    min-height: 31px !important;
+    height: 31px !important;
+    font-size: 0.875rem;
+    border-radius: 4px;
+  }
+  .rs__value-container {
+    height: 29px;
+    padding: 0 6px !important;
+    flex-wrap: nowrap;
+  }
+  .rs__input-container {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .rs__indicators {
+    height: 29px;
+  }
+  .rs__dropdown-indicator {
+    padding: 3px 6px !important;
+  }
+  .rs__clear-indicator {
+    padding: 3px 4px !important;
+  }
+  .rs__single-value,
+  .rs__placeholder {
+    font-size: 0.875rem;
+    line-height: 1;
+  }
+}
+
+// Column min-width helpers for fee table headers
+.fc-70  { min-width: 70px; }
+.fc-80  { min-width: 80px; }
+.fc-90  { min-width: 90px; }
+.fc-100 { min-width: 100px; }
+.fc-110 { min-width: 110px; }
+.fc-120 { min-width: 120px; }
+.fc-130 { min-width: 130px; }
+.fc-140 { min-width: 140px; }
+.fc-160 { min-width: 160px; }
+.fc-180 { min-width: 180px; }
+.fc-200 { min-width: 200px; }
+
+// ── Shared helpers extracted from inline styles (Marine/Air/Truck details) ──
+.md-field--actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.md-inline--mt {
+  margin-top: 4px;
+}
+
+.md-inline--mb {
+  margin-bottom: 4px;
+}
+
+.md-hint-link {
+  color: #409eff;
+  font-size: 12px;
+}
+
+.md-hint-link--sm {
+  font-size: 13px;
+}
+
+.md-error-text {
+  color: red;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.md-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.md-badge-sm {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.md-badge-13 {
+  font-size: 13px;
+}
+
+.md-close-9 {
+  font-size: 9px;
+}
+
+.md-select-160 {
+  width: 160px;
+}
+
+.md-span-3 {
+  grid-column: span 3;
+}
+
+.md-span-4 {
+  grid-column: span 4;
+}
+
+.md-truncate-200 {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.md-logistic-note-view {
+  padding: 8px 12px;
+  background: #f5f7fa;
+  border-radius: 4px;
+  min-height: 60px;
+  color: #606266;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+
+  &--empty {
+    color: #c0c4cc;
+  }
+}
+.fc-240 { min-width: 240px; }

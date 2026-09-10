@@ -1,0 +1,1513 @@
+{
+  "dashboard": {
+    "recentEvents": "最新消息",
+    "noEvents": "暂无消息。",
+    "pendingInProgress": "准备中的订单",
+    "completed": "进行中的订单",
+    "eventType": "事件类型",
+    "awb": "空运单号",
+    "containerNumber": "柜号",
+    "cargoNo": "货运单号",
+    "status": "文件状态",
+    "pending": "不完全",
+    "noTickets": "暂无工单。",
+    "loadingMore": "加载更多中...",
+    "goUpload": "去上传",
+    "viewDetails": "查看详情",
+    "view": "查看详情"
+  },
+  "ticketSummary": {
+    "title": "工单汇总",
+    "nonClosedTitle": "未关闭工单汇总",
+    "refresh": "刷新",
+    "loading": "加载中...",
+    "tickets": "工单",
+    "count": "数量",
+    "failedLoad": "工单汇总加载失败",
+    "failedLoadNonClosed": "未关闭工单汇总加载失败",
+    "totalTickets": "总工单",
+    "marineTickets": "海运工单",
+    "airTickets": "空运工单",
+    "truckTickets": "卡车工单"
+  },
+  "menu": {
+    "menuHeader": "菜单",
+    "pagesHeader": "页面",
+    "componentsHeader": "组件",
+    "home": "首页",
+    "notification": "通知",
+    "financeNotification": "财务通知",
+    "quote": "报价",
+    "createQuote": "创建报价",
+    "quoteList": "报价列表",
+    "createOrder": "创建订单",
+    "createService": "创建服务",
+    "customerOrder": "客户订单",
+    "orderReview": "订单总览",
+    "seaOrder": "海运订单",
+    "customsClearance": "清关",
+    "containerPickup": "提柜",
+    "warehouse": "仓库",
+    "airOrder": "空运订单",
+    "airPickup": "提货",
+    "truckOrder": "卡车订单",
+    "usaToCa": "美国至加拿大",
+    "sop": "SOP 管理",
+    "sopDh": "SOP DH",
+    "sopPublic": "SOP 公共",
+    "itSupport": "工单",
+    "submitTicket": "提交工单",
+    "ticketList": "工单列表",
+    "userManagement": "用户管理",
+    "createUser": "创建用户",
+    "userList": "用户列表",
+    "myOrder": "我的订单",
+    "dashboards": "仪表盘",
+    "apps": "应用",
+    "authentication": "认证",
+    "pages": "页面",
+    "landing": "落地页",
+    "baseUi": "基础 UI",
+    "advanceUi": "高级 UI",
+    "widgets": "小部件",
+    "forms": "表单",
+    "tables": "表格",
+    "charts": "图表",
+    "icons": "图标",
+    "maps": "地图",
+    "multiLevel": "多级菜单",
+    "analytics": "分析",
+    "crm": "客户管理",
+    "ecommerce": "电商",
+    "crypto": "加密货币",
+    "projects": "项目",
+    "nft": "NFT",
+    "job": "招聘",
+    "blog": "博客",
+    "calendar": "日历",
+    "mainCalendar": "主日历",
+    "monthGrid": "月视图",
+    "chat": "聊天",
+    "email": "邮件",
+    "mailbox": "收件箱",
+    "emailTemplates": "邮件模板",
+    "fileManager": "文件管理",
+    "toDo": "待办事项",
+    "profile": "个人资料",
+    "simplePage": "简单页面",
+    "settings": "设置",
+    "baseAlerts": "警告",
+    "baseBadges": "徽章",
+    "baseButtons": "按钮"
+  },
+  "common": {
+    "yes": "是",
+    "no": "否",
+    "fcl": "整柜 (FCL)",
+    "lcl": "拼箱 (LCL)",
+    "edit": "编辑",
+    "upload": "上传",
+    "confirm": "审核",
+    "approve": "同意",
+    "reject": "拒绝",
+    "cache": "缓存",
+    "noData": "暂无数据",
+    "select": "请选择",
+    "selectImporter": "请选择进口商",
+    "all": "全部",
+    "warning": "警告",
+    "noPermission": "无权限",
+    "refresh": "刷新",
+    "loading": "加载中...",
+    "comingSoon": "即将上线",
+    "cancel": "取消",
+    "delete": "删除",
+    "add": "添加行",
+    "submit": "提交全部",
+    "search": "搜索",
+    "reset": "重置",
+    "prev": "上一页",
+    "next": "下一页",
+    "save": "保存",
+    "close": "关闭"
+  },
+  "filePreview": {
+    "noPreview": "该文件类型无法在浏览器中预览，请使用下方按钮打开或下载。",
+    "openInNewTab": "在新标签页打开",
+    "viewerNote": "如预览无法加载，请点击“在新标签页打开”。"
+  },
+  "info": {
+    "assignee": "负责人",
+    "creator": "创建人",
+    "copyLink": "复制 AN/EMF 链接",
+    "txt65": "清关更新时间",
+    "txt79": "拒绝原因",
+    "txt106": "下载压缩包",
+    "zipPreparing": "正在准备压缩包…",
+    "zipDone": "下载完成！",
+    "zipFailed": "下载失败",
+    "confirmDeleteFile": "确定要删除此文件吗？\n{fileName}",
+    "fileDeleteSuccess": "文件删除成功",
+    "fileDeleteFailed": "删除失败",
+    "missingIdsForLink": "缺少 cb_marine_id 或集装箱号",
+    "createLinkFailed": "创建上传链接失败",
+    "noServiceIdForDownload": "未找到可下载的服务编号",
+    "cbTicketUpdated": "CB 工单已更新",
+    "cbTicketUpdateFailed": "更新 CB 工单失败",
+    "logisticTicketUpdated": "物流工单已更新",
+    "logisticTicketUpdateFailed": "更新物流工单失败",
+    "warehouseTicketUpdated": "仓库工单已更新",
+    "warehouseTicketUpdateFailed": "更新仓库工单失败",
+    "airCbUpdated": "空运 CB 工单已更新",
+    "airCbUpdateFailed": "更新空运 CB 工单失败",
+    "airLogisticUpdated": "空运物流工单已更新",
+    "airLogisticUpdateFailed": "更新空运物流工单失败",
+    "airWarehouseUpdated": "空运仓库工单已更新",
+    "airWarehouseUpdateFailed": "更新空运仓库工单失败",
+    "truckCbUpdated": "卡车 CB 工单已更新",
+    "truckCbUpdateFailed": "更新卡车 CB 工单失败",
+    "truckLogisticUpdated": "卡车物流工单已更新",
+    "truckLogisticUpdateFailed": "更新卡车物流工单失败",
+    "truckUsToCaUpdated": "卡车美加运输工单已更新",
+    "truckUsToCaUpdateFailed": "更新卡车美加运输工单失败",
+    "unsavedChangesConfirm": "您有尚未保存的更改。确定要离开且不保存吗？",
+    "unsavedChangesBeforeUnload": "您有尚未保存的更改。",
+    "unsavedChangesLeaveBtn": "仍然离开"
+  },
+  "pagination": {
+    "previous": "上一页",
+    "next": "下一页"
+  },
+  "steps": {
+    "description": "状态实时更新"
+  },
+  "actions": {
+    "viewFile": "查看文件"
+  },
+  "marineDetails": {
+    "releaseCad": "放行 CAD",
+    "importers": "个进口商"
+  },
+  "createOrder": {
+    "title": "创建订单",
+    "breadcrumb": "订单",
+    "pageTitle": "创建订单 | DH",
+    "loadingDestinations": "正在加载目的地...",
+    "ready": "就绪",
+    "aria": {
+      "steps": "创建订单步骤"
+    },
+    "step1": {
+      "header": "第 1/2 步 — 选择服务",
+      "subheader": "选择 海运 / 空运 / 卡车，然后点击下一步。",
+      "chooseService": "选择一个服务",
+      "chooseServiceHint": "先选择一个服务，下一步可配置服务选项。",
+      "containerExistsConfirm": "以下柜号已存在：{containers}。是否仍要继续创建？"
+    },
+    "step2": {
+      "header": "第 2/2 步 — 创建订单",
+      "subheader": "填写信息，然后创建并进入上传页面。",
+      "completeBelow": "请在下方完善信息"
+    },
+    "stepper": {
+      "step1": {
+        "name": "选择服务",
+        "meta": "选择一种服务"
+      },
+      "step2": {
+        "name": "创建订单",
+        "meta": "填写运输信息"
+      }
+    },
+    "services": {
+      "serviceTitle": "运送类型",
+      "marine": "海运",
+      "air": "空运",
+      "truck": "卡车",
+      "parse": "PARS",
+      "marineDesc": "海运柜号：目的地、ERS、FCL/LCL、备注。",
+      "airDesc": "AWB、件数、重量、目的地、ETA。",
+      "truckDesc": "柜号/参考号、美国港口、ERS、加拿大目的地、备注。",
+      "marineFoot": "清关，提柜，仓库",
+      "airFoot": "清关，提柜，仓库",
+      "truckFoot": "清关，提柜，美转加"
+    },
+    "options": {
+      "title": "服务选项",
+      "op1": "清关",
+      "marine": {
+        "op2": "提柜",
+        "op3": "仓库"
+      },
+      "air": {
+        "op2": "提货",
+        "op3": "仓库"
+      },
+      "truck": {
+        "op2": "提送货",
+        "op3": "美国到加拿大"
+      }
+    },
+    "common": {
+      "finalDestination": "最终目的地",
+      "selectDestination": "请选择目的地",
+      "ersOptional": "ERS（可选）",
+      "fclLcl": "FCL / LCL",
+      "noteOptional": "备注（可选）",
+      "select": "请选择",
+      "selectClient": "选择客户",
+      "selectClientPlaceholder": "搜索客户...",
+      "deliveryCity": "派送城市",
+      "postcode": "邮编"
+    },
+    "marine": {
+      "title": "海运信息",
+      "containerNumbers": "柜号（可多个）",
+      "containerPlaceholder": "请输入柜号",
+      "goWarehouse": "是否入仓？",
+      "whetherNeedPickUp": "需要提柜"
+    },
+    "air": {
+      "title": "空运信息",
+      "awb": "运单号（AWB）",
+      "awbPlaceholder": "784-03190564",
+      "etaOptional": "预计到达（可选）",
+      "shippingUnits": "件数",
+      "grossWeight": "毛重",
+      "chargeableWeight": "计费重"
+    },
+    "truck": {
+      "title": "卡车信息",
+      "container": "柜号/参考号",
+      "containerPlaceholder": "柜号 / 参考号",
+      "destinationCanada": "加拿大目的地",
+      "departure": "始发地",
+      "usaPort": "始发地"
+    },
+    "actions": {
+      "next": "下一步",
+      "back": "返回",
+      "remove": "删除",
+      "addContainer": "新增一个柜号",
+      "creating": "创建中...",
+      "createGoUpload": "创建并进入上传",
+      "viewFile": "查看文件"
+    },
+    "errors": {
+      "missingUserId": "会话中缺少用户ID，请重新登录。",
+      "pickAtLeastOneOption": "请至少选择一个服务选项。",
+      "noPermissionForService": "您没有权限创建此服务。",
+      "failedCreate": "创建订单失败。",
+      "marine": {
+        "needContainer": "海运：请至少输入一个柜号。",
+        "badContainer": "海运：柜号“{{c}}”格式错误，应为4位字母+7位数字。",
+        "needDestination": "海运：目的地必填。",
+        "needGoWarehouse": "海运：请选择是否入仓。",
+        "needPickupContainer": "海运：请选择是否提柜。",
+        "needDeliveryCityThirdParty": "海运：当入仓选择第三方仓库时，派送城市必填。",
+        "needPostcodeThirdParty": "海运：当入仓选择第三方仓库时，邮编必填。",
+        "badCanadianPostcode": "海运：加拿大邮编格式错误。示例：M5V 2T6。"
+      },
+      "air": {
+        "needAwb": "空运：AWB 必填。",
+        "badAwbExample": "AWB 格式错误，示例：{{example}}",
+        "needShippingUnits": "空运：件数必填。",
+        "needGrossWeight": "空运：毛重必填。",
+        "needChargeableWeight": "空运：计费重必填。",
+        "needDestination": "空运：目的地必填。"
+      },
+      "truck": {
+        "needContainer": "卡车：请至少输入一个柜号/参考号。",
+        "needUsaPort": "卡车：美国港口必填。",
+        "needDl": "卡车：加拿大目的地（DL）必填。"
+      }
+    }
+  },
+  "uploadMarine": {
+    "title": "上传（海运）",
+    "breadcrumb": "订单",
+    "prepareList": "准备清单",
+    "idsLine": "cb_marine_id: {{cb}} | logistic_marine_id: {{logistic}} | wms_marine_id: {{wms}}",
+    "prepareListWithServices": "准备清单（{{services}}）",
+    "serviceOptions": {
+      "customs": "清关",
+      "pickup": "提柜",
+      "warehouse": "仓库",
+      "none": "未选择服务"
+    },
+    "labels": {
+      "customsImporter": "清关进口商",
+      "selected": "已选择",
+      "poaImporter": "POA / 进口商"
+    },
+    "fileTitles": {
+      "anEmf": "AN/EMF",
+      "packingInvoice": "装箱单/发票",
+      "billOfLading": "提单（B/L）",
+      "deliveryInstructions": "送货指示",
+      "telex": "电放（Telex）",
+      "pickupNumber": "提货号（Pickup）",
+      "others": "其他"
+    },
+    "actions": {
+      "back": "返回",
+      "cancel": "取消",
+      "proceed": "继续提交",
+      "submit": "提交",
+      "submitting": "提交中..."
+    },
+    "modals": {
+      "missingFiles": {
+        "title": "缺少文件",
+        "desc": "部分必需文件缺失。你仍然可以继续提交，但请尽快补齐所需文件。",
+        "missing": "缺少"
+      },
+      "noFiles": {
+        "title": "未上传文件",
+        "desc": "你没有上传任何文件。仍然可以继续提交，但请之后记得补上传所需文件。"
+      }
+    },
+    "errors": {
+      "selectPoaImporter": "请选择 POA / 进口商。",
+      "missingCbMarineId": "URL 中缺少 cb_marine_id。",
+      "submitFailed": "提交失败"
+    }
+  },
+  "uploadFile": {
+    "unknown": "未知",
+    "actions": {
+      "chooseFiles": "选择文件",
+      "remove": "移除"
+    },
+    "dropzone": {
+      "disabled": "当前禁止上传",
+      "dropToAdd": "将文件拖放到这里添加",
+      "dragOrClick": "拖拽文件到这里，或点击选择"
+    },
+    "empty": "未选择文件",
+    "errors": {
+      "invalidFile": "文件无效。",
+      "invalidType": "文件 {{name}} 类型不支持（mime={{mime}}, 扩展名={{ext}}）。"
+    }
+  },
+  "addPoa": {
+    "title": "进口商 / POA",
+    "selectPlaceholder": "请选择进口商",
+    "uploadHint": "上传新的 POA（可选）。上传后会出现在下拉列表中。",
+    "poaNamePlaceholder": "进口商名称",
+    "poaExists": "进口商已经存在",
+    "poaRequired" : "请选择已有的 POA，或上传新的 POA。",
+    "actions": {
+      "upload": "上传 POA",
+      "uploading": "上传中...",
+      "fileSelected": "个文件已选择"
+    },
+    "status": {
+      "active": "启用",
+      "inactive": "停用"
+    }
+  },
+  "uploadAir": {
+    "title": "上传（空运）",
+    "breadcrumb": "订单",
+    "prepareList": "准备清单",
+    "prepareListWithValue": "准备清单（{{value}}）",
+    "idsLine": "cb_air_id: {{cb}} | logistic_air_id: {{logistic}} | wms_air_id: {{wms}}",
+    "prepareListWithServices": "准备清单（{{services}}）",
+    "serviceOptions": {
+      "customs": "清关",
+      "pickup": "提柜",
+      "warehouse": "仓库",
+      "none": "未选择服务"
+    },
+    "labels": {
+      "customsImporter": "清关进口商",
+      "selected": "已选择",
+      "importerPoa": "进口商（POA）"
+    },
+    "fileTitles": {
+      "anEmf": "AN/EMF",
+      "packingInvoice": "装箱单/发票",
+      "billOfLading": "提单（B/L）",
+      "deliveryInstructions": "送货指示",
+      "others": "其他"
+    },
+    "missing": {
+      "atLeastOneFile": "至少上传 1 个文件"
+    },
+    "actions": {
+      "back": "返回",
+      "cancel": "取消",
+      "proceed": "继续提交",
+      "submit": "提交",
+      "submitting": "提交中..."
+    },
+    "modals": {
+      "missingFiles": {
+        "title": "缺少文件",
+        "desc": "部分必需文件缺失。你仍然可以继续提交，但请尽快补齐所需文件。",
+        "missing": "缺少"
+      }
+    },
+    "errors": {
+      "submitFailed": "提交失败"
+    }
+  },
+  "uploadTruck": {
+    "title": "上传（卡车）",
+    "breadcrumb": "订单",
+    "prepareList": "准备清单",
+    "prepareListWithValue": "准备清单（{{value}}）",
+    "prepareListWithServices": "准备清单（{{services}}）",
+    "serviceOptions": {
+      "customs": "清关",
+      "pickupDelivery": "提货 / 派送",
+      "usaToCanada": "美国到加拿大",
+      "type4": "服务选项",
+      "none": "未选择服务"
+    },
+    "labels": {
+      "customsImporter": "清关进口商",
+      "selected": "已选择",
+      "importerPoa": "进口商（POA）"
+    },
+    "fileTitles": {
+      "anEmf": "AN/EMF",
+      "packingInvoice": "装箱单/发票",
+      "separateCargoFiles": "分票文件（Separate Cargo Files）",
+      "hbl": "HBL",
+      "mbl": "MBL",
+      "parsNumber": "Pars 号码",
+      "others": "其他"
+    },
+    "missing": {
+      "atLeastOneFile": "至少上传 1 个文件"
+    },
+    "actions": {
+      "back": "返回",
+      "cancel": "取消",
+      "proceed": "继续提交",
+      "submit": "提交",
+      "submitting": "提交中..."
+    },
+    "modals": {
+      "missingFiles": {
+        "title": "缺少文件",
+        "desc": "部分必需文件缺失。你仍然可以继续提交，但请尽快补齐所需文件。",
+        "missing": "缺少"
+      }
+    },
+    "errors": {
+      "submitFailed": "提交失败"
+    }
+  },
+  "orderList": {
+    "title": "订单列表",
+    "breadcrumb": "订单",
+    "filters": {
+      "service": "服务类型",
+      "status": "订单状态",
+      "destination": "目的地",
+      "serviceState": "服务阶段",
+      "portEta": "到港时间",
+      "trainEta": "到站时间",
+      "refresh": "刷新"
+    },
+    "table": {
+      "type": "类型",
+      "containerOrAwb": "柜号 / 空运单号",
+      "mainId": "订单号",
+      "orderStatus": "订单状态",
+      "customs": "清关",
+      "pickupCargo": "提柜 / 提货",
+      "warehouseUsCa": "仓库 / 美转加",
+      "createTime": "创建时间",
+      "note": "备注",
+      "actions": "操作",
+      "updateService": "更新服务",
+      "detailStatus": "详细信息",
+      "viewTrack": "查看轨迹",
+      "view": "查看"
+    },
+    "sections": {
+      "customsInfo": "清关信息",
+      "logisticsInfo": "物流信息",
+      "warehouseInfo": "仓库信息",
+      "truckCustomsInfo": "清关信息",
+      "truckLogisticsInfo": "卡车物流信息",
+      "truckUsCaInfo": "美加卡派信息"
+    },
+    "columns": {
+      "importer": "清关主体",
+      "containerNumber": "货柜号",
+      "destination": "目的地",
+      "shipline": "船司",
+      "portEta": "到港时间",
+      "trainEta": "到站时间",
+      "awb": "空运提单号",
+      "airline": "航司",
+      "eta": "预计到达",
+      "cad": "CAD状态",
+      "draftCad": "Draft CAD",
+      "releaseCad": "Release CAD",
+      "iidStatus": "清关状态",
+      "customsStatusTime": "清关状态更新时间",
+      "orderStatus": "订单状态",
+      "status": "状态",
+      "pkNum": "提柜号",
+      "pickupDate": "提柜日期",
+      "returnDate": "还柜日期",
+      "process": "货柜流程状态",
+      "crossBorderLocation": "过境口岸",
+      "crossBorderTime": "过境时间",
+      "transaction": "交易参考号",
+      "referenceNumber": "参考号",
+      "destinationUs": "美国港口",
+      "transactionDate": "交易日期",
+      "shippingUnits": "箱数",
+      "supervisionFee": "监管费",
+      "terminalCost": "港杂费",
+      "supervisionWarehouse": "监管仓",
+      "ata": "实际到达",
+      "cargoArrivalTime": "货车到达时间",
+      "cargoPickupTime": "货车提货时间",
+      "fcl": "FCL",
+      "rail": "铁路",
+      "ers": "ERS",
+      "parse": "PARS",
+      "goWarehouse": "是否入仓",
+      "whetherNeedPickUp": "需要提柜",
+      "cost": "花费",
+      "plateNumber": "板数",
+      "endJourney": "尾程",
+      "customStatusTime": "清关状态更新时间",
+      "weight": "重量",
+      "departure": "始发地",
+      "truckCompany": "卡车公司",
+      "note": "备注",
+      "serviceType": "服务类型",
+      "createTime": "创建时间"
+    },
+    "tags": {
+      "newMessage": "有新留言"
+    }
+  },
+  "state": {
+    "order": {
+      "pending": "待处理",
+      "reviewing": "审核中",
+      "pendingSubmission": "待递交",
+      "processing": "处理中",
+      "submitted": "已递交",
+      "released": "已放行",
+      "completed": "已完成",
+      "exception": "异常",
+      "rejected": "已驳回",
+      "deletePending": "删除待处理",
+      "deleted": "已删除"
+    },
+    "cad": {
+      "notSubmit": "未提交",
+      "submitted": "已提交",
+      "agree": "已确认",
+      "rejected": "已拒绝",
+      "confirmTitle": "确认 CAD",
+      "confirmHint": "请确认 CAD 文件。",
+      "decision": "审批意见",
+      "rejectReason": "拒绝原因"
+    },
+    "customs": {
+      "notStarted": "未清关",
+      "docsSubmitted": "资料已上传至海关系统",
+      "inspecting": "清关异常（含ACI hold/reject/海关查验）",
+      "cleared": "海关放行",
+      "cbsaAccepted": "已接受",
+      "cbsaRejected": "已被拒绝",
+      "cbsaReleased": "已放行",
+      "cbsaExamRequired": "需要查验",
+      "cbsaAcceptedWaiting": "已接受 / 等待中",
+      "cbsaAcceptedAwaitingCustoms": "已接受 / 等待清关"
+    },
+    "logistics": {
+      "booked": "已订舱",
+      "loaded": "已装载",
+      "inTransit": "运输途中"
+    },
+    "pickup": {
+      "booked": "提货已预约",
+      "inTransit": "派送中",
+      "pendingComplete": "待完成",
+      "deliveryCompleted": "派送完成",
+      "totalCompleted": "完成"
+    },
+    "warehouse": {
+      "arrived": "已到仓库",
+      "inStorage": "仓储中",
+      "dispatched": "已出库",
+      "delivered": "已送达"
+    },
+    "warehouseFlag": {
+      "inWarehouse": "已入仓",
+      "notInWarehouse": "未入仓"
+    }
+  },
+  "tracking": {
+    "title": "轨迹时间线",
+    "events": "条记录",
+    "noData": "暂无轨迹数据",
+    "containerNo": "箱号",
+    "time": "时间",
+    "type": "类型",
+    "location": "位置",
+    "desc": "描述"
+  },
+  "changeService": {
+    "title": "更新服务",
+    "success": "服务更新成功。",
+    "orderNo": "订单号",
+    "action": {
+      "label": "操作类型",
+      "placeholder": "请选择操作类型",
+      "add": "新增服务",
+      "cancel": "取消服务"
+    },
+    "rules": {
+      "addAnytime": "您可以随时添加服务。",
+      "deleteWithinTwoHours": "服务在创建后的2小时内可以删除。",
+      "afterTwoHours": "超过2小时后将无法删除，该服务状态将变为待处理。"
+    },
+    "services": {
+      "title": "服务项目",
+      "hint": "请选择需要新增或取消的服务。",
+      "customs": "清关",
+      "pickupMarine": "提柜",
+      "pickupAir": "提货",
+      "pickupTruck": "提货 / 派送",
+      "warehouse": "仓储",
+      "cargo": "提货"
+    },
+    "note": {
+      "label": "备注",
+      "placeholder": "请输入备注（可选）"
+    },
+    "actions": {
+      "close": "关闭",
+      "submit": "提交",
+      "submitting": "提交中..."
+    },
+    "errors": {
+      "missingUser": "缺少用户信息，请重新登录。",
+      "required": "请选择操作类型并至少选择一个服务。"
+    }
+  },
+  "files": {
+    "title": "文件",
+    "add": "新增",
+    "replace": "替换",
+    "supportingDocuments": "支持文件"
+  },
+
+  "chat": {
+    "title": "客户留言",
+    "send": "发送",
+    "notification": "请输入留言内容",
+    "newMessage": "新消息",
+    "newClientMessage": "新客户留言",
+    "internalMessage": "内部消息"
+  },
+
+  "captcha": {
+    "slide": "拖动滑块到最右边",
+    "notification": "请先完成滑动验证后再登录",
+    "success": "验证成功"
+  },
+  "login": {
+    "signin": "登录",
+    "userName": "用户名",
+    "password": "密码",
+    "enterUserName": "请输入用户名",
+    "enterPassword": "请输入密码",
+    "userNameRequired": "请输入用户名",
+    "passwordRequired": "请输入密码"
+  },
+  "changePassword": {
+    "title": "修改密码",
+    "subtitle": "您正在使用临时密码，请设置新密码后继续。",
+    "currentPassword": "临时密码",
+    "currentPasswordPlaceholder": "请输入您的临时密码",
+    "currentPasswordGeneric": "当前密码",
+    "currentPasswordGenericPlaceholder": "请输入您的当前密码",
+    "newPassword": "新密码",
+    "newPasswordPlaceholder": "请输入新密码",
+    "confirmPassword": "确认新密码",
+    "confirmPasswordPlaceholder": "请再次输入新密码",
+    "requirements": "至少8个字符，需包含大写字母、小写字母和数字。",
+    "showPasswords": "显示密码",
+    "submit": "修改密码",
+    "allFieldsRequired": "请填写所有字段。",
+    "mismatch": "新密码与确认密码不一致。",
+    "sameAsCurrent": "新密码不能与当前密码相同。",
+    "success": "密码修改成功，正在跳转到登录页…",
+    "profileSuccess": "密码修改成功。",
+    "failed": "密码修改失败。"
+  },
+  "work": {
+    "pin": "审批 PIN 码",
+    "showPin": "显示 PIN 码",
+    "copy": "复制",
+    "copied": "已复制",
+    "copyFailed": "复制失败",
+    "hide": "隐藏",
+    "loading": "加载中...",
+    "totalOrders": "总订单",
+    "pendingOrders": "待完成订单",
+    "cityOrders": "城市总订单",
+    "count": "数量",
+    "refresh": "刷新",
+    "noData": "暂无数据",
+    "exportAdditionalFee": "导出附加费",
+    "exportInvoiceFee": "导出发票费",
+    "exporting": "导出中…",
+    "exportNoData": "暂无数据可导出",
+    "exportSuccess": "已导出 {n} 条记录",
+    "exportFailed": "导出失败"
+  },
+  "serviceList": {
+    "filters": {
+      "selectClient": "客户",
+      "serviceType": "服务类型",
+      "pars": "PARS",
+      "containerNo": "柜号",
+      "note": "备注",
+      "awb": "空运单号",
+      "cadStatus": "CAD 状态",
+      "customStatus": "清关状态",
+      "portEta": "到港时间",
+      "trainEta": "到站时间",
+      "transaction": "交易参考号",
+      "destination": "目的地",
+      "rail": "铁路",
+      "assignee": "负责人",
+      "customStatusTime": "清关状态时间",
+      "sortBy": "排序方式",
+      "ata": "实际到达",
+      "cargoArrivalTime": "入仓时间",
+      "cargoPickupTime": "提货时间",
+      "notifications": "通知",
+      "refresh": "刷新",
+      "startDate": "开始日期",
+      "endDate": "结束日期"
+    },
+    "cadOptions": {
+      "notConfirmed": "未确认",
+      "confirmed": "已确认"
+    },
+    "table": {
+      "assignee": "负责人",
+      "client": "客户",
+      "action": "操作",
+      "unassigned": "请选择",
+      "noRecords": "暂无记录"
+    },
+    "tabs": {
+      "all": "全部"
+    },
+    "pagination": {
+      "total": "共",
+      "items": "条",
+      "perPage": "条/页",
+      "goto": "前往",
+      "page": "页"
+    },
+    "columns": {
+      "anEmf": "AN/EMF",
+      "lastFreeDay": "最后免租日",
+      "note": "备注",
+      "creator": "创建人"
+    },
+    "actions": {
+      "exportExcel": "下载 Excel",
+      "uploadExcel": "上传 Excel",
+      "updateTrainEta": "批量上传 Train ETA",
+      "uploading": "上传中...",
+      "uploadSuccess": "上传成功",
+      "uploadFailed": "上传失败",
+      "exporting": "导出中..."
+    },
+    "rejectNoteRequired": "拒绝时必须填写原因"
+  },
+  "logistic": {
+    "title": "提柜",
+    "status": {
+      "all": "全部",
+      "underReview": "待审核",
+      "processing": "进行中",
+      "inTransit": "派送中",
+      "pendingComplete": "待完成",
+      "deliveryCompleted": "送货完成",
+      "completed": "已完成",
+      "totalCompleted": "财务完成",
+      "rejected": "已拒绝",
+      "deletePending": "待删除"
+    },
+    "goWarehouse": {
+      "dhWarehouse": "DH仓库",
+      "thirdParty": "第三方",
+      "do": "放单"
+    },
+    "filters": {
+      "pickupDate": "提柜日期",
+      "completeTime": "完成时间",
+      "needPickup": "是否提柜",
+      "hasPickupNo": "提柜号",
+      "hasPkNum": "有提柜号",
+      "noPkNum": "无提柜号",
+      "goWarehouse": "去仓库"
+    },
+    "columns": {
+      "needPickup": "是否提柜",
+      "goWarehouse": "是否进仓",
+      "pickupNo": "提柜号",
+      "pickupDate": "提柜日期",
+      "returnDate": "还柜日期",
+      "telex": "电报",
+      "containerStatus": "流程状态",
+      "createTime": "创建时间",
+      "completeTime": "完成时间",
+      "warehouseArrivalDate": "仓库到达时间"
+    }
+  },
+  "truckUsaToCa": {
+    "serviceType": {
+      "usaToCa": "美转加",
+      "caToUsa": "加转美",
+      "dropship": "一件代发",
+      "fba": "FBA",
+      "firstMile": "头程",
+      "thirdParty": "三方派送"
+    },
+    "goWarehouse": {
+      "yes": "已进仓",
+      "no": "未进仓"
+    }
+  },
+  "internalChat": {
+    "title": "内部聊天",
+    "container": "箱号: {number}",
+    "awb": "AWB: {awb}",
+    "loading": "加载中...",
+    "noData": "暂无数据",
+    "placeholder": "请输入内部留言...",
+    "sending": "发送中...",
+    "send": "发送",
+    "invalidMention": "无效的@提及用户"
+  },
+  "createUser": {
+    "title": "创建用户",
+    "subtitle": "新客户账号",
+    "noPermission": "您没有创建用户的权限",
+    "fields": {
+      "username": "用户名",
+      "password": "密码",
+      "firstName": "名",
+      "lastName": "姓",
+      "phone": "电话",
+      "email": "邮箱",
+      "company": "公司名称",
+      "currency": "货币",
+      "billTerm": "账单方式"
+    },
+    "billTermOptions": {
+      "perDeal": "按单计费",
+      "monthly": "月结"
+    },
+    "validation": {
+      "usernameRequired": "请输入用户名",
+      "usernameEnglishOnly": "用户名只能包含英文字母",
+      "passwordRequired": "请输入密码",
+      "firstNameRequired": "请输入名",
+      "lastNameRequired": "请输入姓",
+      "phoneRequired": "请输入电话",
+      "emailRequired": "请输入邮箱",
+      "emailInvalid": "请输入正确的邮箱",
+      "companyRequired": "请输入公司名称",
+      "currencyRequired": "请选择货币种类",
+      "billTermRequired": "请选择账单方式"
+    },
+    "submit": "创建用户",
+    "reset": "重置",
+    "back": "返回用户列表"
+  },
+  "tollFee": {
+    "title": "费用记录",
+    "locked": "已锁定（完成后30天以上）",
+    "unlockPin": "使用PIN解锁",
+    "taskIdRequired": "需要task_id。",
+    "defaultContainer": "默认箱号",
+    "available": "可用箱号",
+    "profitRate": "利润率",
+    "noProfitRate": "暂无利润率",
+    "noContainer": "无箱号",
+    "noNotes": "无备注",
+    "notRecorded": "未记录",
+    "noAttachment": "无附件",
+    "uploaded": "已上传",
+    "chooseFile": "选择文件",
+    "addRow": "添加行",
+    "submitAll": "提交全部",
+    "select": "请选择...",
+    "status": {
+      "processing": "处理中",
+      "finished": "已完成"
+    },
+    "col": {
+      "containerNumber": "箱号",
+      "chargeTypes": "费用类型",
+      "quantity": "数量",
+      "rate": "费率",
+      "currency": "货币",
+      "notes": "备注",
+      "record": "记录",
+      "arName": "AR姓名",
+      "costAmount": "成本金额",
+      "vendor": "供应商",
+      "invoiceNo": "发票号",
+      "attachment": "附件",
+      "applicant": "申请人",
+      "approve": "审批",
+      "approver": "审批人",
+      "apName": "AP姓名",
+      "operation": "操作",
+      "status": "状态"
+    },
+    "toast": {
+      "unlocked": "解锁成功。",
+      "incorrectPin": "PIN码错误，请重试。",
+      "pinFailed": "PIN码验证失败，请重试。",
+      "locked": "此记录已锁定，请先用PIN码解锁。",
+      "noPermissionApprove": "您没有权限审批此记录。",
+      "selectContainer": "请先选择箱号。",
+      "approverLocked": "审批人一旦设置，不可取消勾选。",
+      "saveApproverFailed": "保存审批人失败，请重试。",
+      "noPermissionAp": "您没有权限设置AP。",
+      "apLocked": "AP一旦设置，不可取消勾选。",
+      "saveApFailed": "保存AP失败，请重试。",
+      "noPermissionAr": "您没有权限设置AR。",
+      "arLocked": "AR一旦设置，不可取消勾选。",
+      "saveArFailed": "保存AR失败，请重试。",
+      "noTaskId": "未找到任务ID，请刷新页面。",
+      "requireContainer": "提交前请为每行选择箱号。",
+      "requireChargeType": "提交前请为每行选择费用类型。",
+      "rowRequireFields": "第{n}行：数量、费率和费率货币均为必填项。",
+      "rowRequireRightFields": "第{n}行：成本金额、成本货币、供应商和发票号必须同时填写。",
+      "rowFileUploadFailed": "第{n}行：文件上传失败，请重试。",
+      "rowSaveFailed": "第{n}行：保存失败，请检查网络后重试。",
+      "success": "所有行已成功保存。",
+      "submitFailed": "提交失败，请重试。"
+    }
+  },
+  "paymentApproval": {
+    "title": "付款/费用审批",
+    "locked": "已锁定（完成后30天以上）",
+    "unlockPin": "使用PIN解锁",
+    "noContainer": "无箱号",
+    "noNotes": "无备注",
+    "notRecorded": "未记录",
+    "recorded": "已记录",
+    "noAttachment": "无附件",
+    "uploaded": "已上传",
+    "chooseFile": "选择文件",
+    "addRow": "添加行",
+    "submitAll": "提交全部",
+    "select": "请选择...",
+    "defaultContainer": "默认箱号",
+    "available": "可用箱号",
+    "col": {
+      "containerNumber": "箱号",
+      "billTypes": "账单类型",
+      "amount": "金额",
+      "currency": "货币",
+      "attachment": "附件",
+      "notes": "备注",
+      "applicant": "申请人",
+      "approver": "审批",
+      "approverName": "审批人姓名",
+      "ap": "AP",
+      "apName": "AP姓名",
+      "ar": "AR",
+      "arName": "AR姓名",
+      "operation": "操作"
+    },
+    "toast": {
+      "unlocked": "解锁成功。",
+      "incorrectPin": "PIN码错误，请重试。",
+      "pinFailed": "PIN码验证失败，请重试。",
+      "locked": "此记录已锁定，请先用PIN码解锁。",
+      "noPermissionApprove": "您没有权限审批此记录。",
+      "selectContainer": "请先选择箱号。",
+      "approverLocked": "审批人一旦设置，不可取消勾选。",
+      "saveApproverFailed": "保存审批人失败，请重试。",
+      "noPermissionAp": "您没有权限设置AP。",
+      "apLocked": "AP一旦设置，不可取消勾选。",
+      "saveApFailed": "保存AP失败，请重试。",
+      "noPermissionAr": "您没有权限设置AR。",
+      "arLocked": "AR一旦设置，不可取消勾选。",
+      "saveArFailed": "保存AR失败，请重试。",
+      "noTaskId": "未找到任务ID，请刷新页面。",
+      "requireContainer": "提交前请为每行选择箱号。",
+      "requireFields": "请为每行填写所有必填字段（类型、金额、货币）。",
+      "rowFileUploadFailed": "第{n}行：文件上传失败，请重试。",
+      "rowSaveFailed": "第{n}行：保存失败，请检查网络后重试。",
+      "success": "所有行已成功保存。",
+      "submitFailed": "提交失败，请重试。"
+    }
+  },
+  "notification": {
+    "title": "通知",
+    "filters": {
+      "assignee": "负责人",
+      "destination": "目的地",
+      "type": "类型",
+      "allAssignees": "所有负责人",
+      "allCities": "所有城市",
+      "allTypes": "所有类型",
+      "marine": "海运",
+      "air": "空运",
+      "truck": "陆运",
+      "refresh": "刷新",
+      "reset": "重置"
+    },
+    "cad": {
+      "title": "CAD草稿逾期",
+      "noMarine": "无逾期海运CAD",
+      "noAir": "无逾期空运CAD",
+      "noTruck": "无逾期陆运CAD"
+    },
+    "alerts": {
+      "title": "待处理提醒",
+      "ftlTrain": "海运 — FTL火车ETA逾期24小时",
+      "lclTrain": "海运 — LCL火车ETA逾期1个月",
+      "vanPort": "海运 — 温哥华港口ETA逾期2天",
+      "truckPars": "陆运 — PARS待处理",
+      "noFtl": "无FTL火车逾期",
+      "noLcl": "无LCL火车逾期",
+      "noVan": "无温哥华港口ETA逾期",
+      "noPars": "无陆运PARS待处理"
+    },
+    "poa": {
+      "title": "POA待审批",
+      "viewFile": "查看文件",
+      "approve": "审批",
+      "noPending": "无待审批POA文件"
+    }
+  },
+  "financeNotification": {
+    "title": "财务通知",
+    "filters": {
+      "taskId": "任务编号",
+      "containerNumber": "箱号",
+      "createDate": "创建日期",
+      "refresh": "刷新",
+      "reset": "重置"
+    },
+    "alerts": {
+      "title": "财务提醒",
+      "missingFee": "7天内无箱号费用",
+      "halfFee": "14天内费用不完整",
+      "negativeProfit": "负利润率",
+      "portNoTrain": "港口ETA后15天无火车ETA",
+      "noMissingFee": "无缺失箱号费用提醒",
+      "noHalfFee": "无不完整费用提醒",
+      "noNegativeProfit": "无负利润率提醒",
+      "noPortNoTrain": "无港口ETA/火车ETA提醒",
+      "noTrainEta": "无火车ETA",
+      "failedLoad": "加载财务提醒失败"
+    }
+  },
+  "quote": {
+    "title": "创建报价",
+    "pageTitle": "报价",
+    "customer": "客户",
+    "currency": "币种",
+    "pod": "目的港",
+    "province": "省份",
+    "selectProvince": "选择省份",
+    "useTyped": "使用",
+    "typeToSearch": "输入以搜索，或输入新城市",
+    "selectProvinceFirstHint": "请先选择省份",
+    "postcodePlaceholderExample": "例如：M5V 2T6",
+    "fsaSuggestionsLabel": "建议邮编前缀：",
+    "fsaSuggestionsMore": "还有 {count} 个 — 继续输入以缩小范围",
+    "deliveryCity": "送货城市",
+    "postcode": "邮编",
+    "category": "服务类别",
+    "logisticsType": "物流类型",
+    "service": "服务项目",
+    "note": "备注",
+    "fee": "费用",
+    "unit": "计费单位",
+    "freeDays": "免费天数",
+    "freeHours": "免费小时",
+    "additionalInfo": "附加信息",
+    "address": "地址",
+    "dock": "月台",
+    "addLine": "添加行",
+    "addedLines": "已添加行",
+    "generatePdf": "生成PDF",
+    "generateTemplate": "邮件模板",
+    "submitAll": "提交全部",
+    "delete": "删除",
+    "cancel": "取消",
+    "confirm": "确认",
+    "noLinesYet": "暂无已添加行",
+    "addDefaultCb": "添加清关默认行",
+    "addDefaultFcl": "添加FCL默认行",
+    "pickCategory": "选择类别",
+    "pickService": "选择服务",
+    "selectUnit": "选择单位",
+    "selectFreeAmount": "选择免费数量",
+    "freeAmt": "免费量",
+    "addressOptional": "地址（选填）",
+    "dockNo": "否",
+    "dockYes": "是",
+    "selectCustomer": "选择客户",
+    "deliveryCityPlaceholder": "送货城市必填",
+    "noPerm": "您没有提交权限。",
+    "duplicateTitle": "发现重复报价",
+    "duplicateBody": "已存在相同报价，请提供生效日期以覆盖。",
+    "effectiveDate": "生效日期",
+    "listTitle": "报价列表",
+    "newQuote": "+ 新建报价",
+    "allCustomers": "全部客户",
+    "search": "搜索",
+    "reset": "重置",
+    "noQuotes": "暂无报价",
+    "title1": "销售报价",
+    "createDate": "创建日期",
+    "edit": "编辑",
+    "save": "保存",
+    "totalsLabel": "合计",
+    "colCustomer": "客户",
+    "colCategory": "服务类别",
+    "colService": "服务 (EN | 中文)",
+    "colAction": "操作",
+    "colEffectiveDate": "生效日期",
+    "pageSize": "每页",
+    "errFeeRequired": "费用为必填。",
+    "errLogisticsFcl": "请先选择物流类别和FCL。",
+    "errSelectCustomer": "请先选择客户。",
+    "errDeliveryCity": "送货城市为必填。",
+    "errPostcode": "邮编为必填。",
+    "errInvalidPostcode": "加拿大邮编格式不正确，例：M5V 2T6",
+    "errCbExists": "清关默认行已存在。",
+    "cbAdded": "已添加 {count} 条清关默认行。",
+    "errFclExists": "FCL默认行已存在。",
+    "fclAdded": "已添加 {count} 条FCL默认行。",
+    "errPleaseFill": "请填写: {fields}",
+    "errNoSalesId": "未找到当前销售人员ID。",
+    "errCustomerRequired": "请选择客户。",
+    "errAddOneLine": "请至少添加一行。",
+    "errLineCategory": "第{n}行：类别为必填。",
+    "errLineService": "第{n}行：服务为必填。",
+    "errLineFee": "第{n}行：费用为必填。",
+    "errLineCity": "第{n}行：送货城市为必填。",
+    "errLinePostcode": "第{n}行：邮编为必填。",
+    "errLineInvalidPostcode": "第{n}行：加拿大邮编格式不正确，例：M5V 2T6",
+    "errCancelled": "提交已取消。",
+    "errLineFailed": "第{n}行提交失败。",
+    "successSubmitted": "所有报价行已提交！",
+    "errNoPdfPopup": "请允许弹出窗口以生成PDF。",
+    "pdfTitle": "销售报价单",
+    "pdfCustomer": "客户",
+    "pdfDate": "日期",
+    "pdfCurrency": "币种",
+    "pdfFooter": "本报价仅供参考，以最终确认为准。",
+    "pdfColCategory": "类别",
+    "pdfColService": "服务",
+    "pdfColNote": "备注",
+    "pdfColFee": "费用",
+    "pdfColAddress": "地址",
+    "pdfColPod": "目的港",
+    "pdfColCity": "送货城市",
+    "pdfColPostcode": "邮编",
+    "pdfColDock": "月台"
+  },
+  "supportTickets": {
+    "edit": {
+      "title": "编辑工单",
+      "copyLink": "复制链接",
+      "linkCopied": "链接已复制到剪贴板。"
+    },
+    "submit": {
+      "title": "提交支持工单",
+      "missingFields": "主题和描述为必填项。",
+      "noUser": "无法识别您的账户，请重新登录。",
+      "failed": "提交工单失败。",
+      "submitting": "提交中...",
+      "submit": "提交工单",
+      "success": "工单 {ticket} 提交成功。",
+      "viewTickets": "查看我的工单"
+    },
+    "fields": {
+      "subject": "主题",
+      "note": "问题描述",
+      "type": "类型",
+      "priority": "优先级",
+      "requester": "申请人",
+      "selectUser": "选择用户",
+      "assignTo": "指派给",
+      "unassigned": "未指派",
+      "attachments": "附件（图片、PDF、Excel、CSV、ZIP，最多10个文件，每个不超过20MB）"
+    },
+    "replies": {
+      "title": "处理动态 / 回复",
+      "legacyResponse": "此前的解决方案备注",
+      "empty": "暂无回复。",
+      "placeholder": "输入回复内容...",
+      "pasteHint": "提示：可直接粘贴截图（Ctrl+V）作为附件。",
+      "send": "发送",
+      "internalNote": "内部备注（申请人不可见）",
+      "internalBadge": "内部",
+      "requester": "申请人",
+      "support": "支持人员",
+      "loadFailed": "加载回复失败。"
+    },
+    "type": {
+      "general": "常规",
+      "hardware": "硬件",
+      "software": "软件",
+      "network": "网络",
+      "accessAccount": "账户与权限",
+      "lingxing": "领星系统"
+    },
+    "priority": {
+      "low": "低",
+      "medium": "中",
+      "high": "高",
+      "urgent": "紧急"
+    },
+    "status": {
+      "open": "待处理",
+      "inProgress": "处理中",
+      "onHold": "暂缓处理",
+      "resolved": "已解决",
+      "closed": "已关闭"
+    },
+    "list": {
+      "title": "IT支持工单",
+      "searchLabel": "搜索",
+      "searchPlaceholder": "按工单号、主题或描述搜索",
+      "total": "总计",
+      "noData": "暂无工单",
+      "loadFailed": "加载工单失败。",
+      "ticketNotFound": "未找到该工单。",
+      "onlyMine": "仅与我相关的工单（指派给我或我创建的）",
+      "statusActive": "进行中（待处理 / 处理中）",
+      "columns": {
+        "ticketNumber": "工单号",
+        "subject": "主题",
+        "requester": "申请人",
+        "type": "类型",
+        "priority": "优先级",
+        "status": "状态",
+        "assignedTo": "指派给",
+        "created": "创建时间",
+        "actions": "操作"
+      }
+    }
+  },
+  "userList": {
+    "title": "用户列表",
+    "searchLabel": "公司名称",
+    "searchPlaceholder": "搜索公司名称",
+    "total": "总计",
+    "noData": "暂无记录",
+    "exportExcel": "导出Excel",
+    "exporting": "导出中...",
+    "noPermission": "您没有权限查看此页面。",
+    "columns": {
+      "id": "ID",
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "邮箱",
+      "phone": "电话",
+      "company": "公司",
+      "currency": "币种",
+      "salesName": "销售名称",
+      "action": "操作",
+      "detail": "详情"
+    }
+  },
+  "userInfo": {
+    "title": "用户详情",
+    "clientInfo": "客户信息",
+    "notFound": "用户未找到。",
+    "back": "返回用户列表",
+    "fields": {
+      "userId": "用户ID",
+      "username": "用户名",
+      "firstName": "名",
+      "lastName": "姓",
+      "phone": "电话",
+      "email": "邮箱",
+      "company": "公司",
+      "currency": "币种",
+      "billTerm": "账期",
+      "created": "创建时间",
+      "clientType": "客户类型",
+      "typeNA": "无",
+      "typeSalesClient": "销售客户",
+      "typeCompanyClient": "企业客户"
+    }
+  },
+  "importer": {
+    "sectionTitle": "进口商及文件",
+    "searchPlaceholder": "搜索进口商…",
+    "addBtn": "+ 添加进口商",
+    "cancelBtn": "取消",
+    "nameLabel": "进口商名称",
+    "namePlaceholder": "例如：ABC Imports Inc.",
+    "poaFileLabel": "POA 文件（PDF，可选）",
+    "addSubmit": "添加",
+    "noImporters": "暂无进口商，请点击「+ 添加进口商」创建。",
+    "noMatch": "未找到匹配的进口商",
+    "gstDuty": "GST/关税",
+    "yes": "是",
+    "no": "否",
+    "update": "更新",
+    "upload": "上传",
+    "gstUpdated": "GST/关税已更新",
+    "gstFailed": "GST/关税更新失败",
+    "addedOk": "进口商已添加",
+    "addFailed": "添加进口商失败",
+    "fileUpdated": "文件已更新",
+    "fileFailed": "文件更新失败",
+    "nameRequired": "进口商名称不能为空"
+  },
+  "sales": {
+    "addtitle": "分配销售",
+    "selectSales": "选择销售",
+    "pickSales": "请选择销售人员",
+    "submit": "提交",
+    "refresh": "刷新",
+    "salesName": "销售名称",
+    "customerName": "客户名称",
+    "createDate": "创建日期",
+    "salesLists": "已分配销售",
+    "noTicket": "暂无记录",
+    "assignedOk": "分配成功",
+    "noPerm": "无权限"
+  },
+  "fileUpload": {
+    "choose": "选择文件",
+    "dragOrClick": "拖拽文件到此处，或点击浏览",
+    "disabled": "上传功能已禁用",
+    "remove": "移除",
+    "tooLarge": "文件过大（上限 {size}）。",
+    "limitReached": "最多可添加 {count} 个文件。"
+  },
+  "sop": {
+    "pageTitle": "SOP 管理",
+    "searchPlaceholder": "搜索 SOP...",
+    "allCategories": "全部",
+    "addCategory": "添加分类",
+    "categoryName": "分类名称",
+    "uploadSop": "上传 SOP",
+    "noItems": "暂无 SOP。",
+    "total": "总计",
+    "loadFailed": "加载 SOP 失败。",
+    "noUser": "无法识别您的账号，请重新登录。",
+    "noCategories": "暂无分类，请先添加。",
+    "departments": {
+      "public": "公共"
+    },
+    "categories": {
+      "onboarding": "入职培训",
+      "productTraining": "产品培训",
+      "toolsSystems": "工具与系统",
+      "other": "其他",
+      "sop": "标准流程",
+      "customsCompliance": "海关与合规",
+      "policiesBenefits": "政策与福利",
+      "performanceReviews": "绩效考核",
+      "expenseReimbursement": "费用报销",
+      "reportingCompliance": "报表与合规",
+      "fulfillmentSop": "履约流程",
+      "supportSop": "客服流程"
+    },
+    "materialType": {
+      "all": "全部类型",
+      "video": "视频",
+      "document": "文档",
+      "videoWithDocuments": "视频 + 文档",
+      "other": "其他"
+    },
+    "category": {
+      "failed": "添加分类失败。",
+      "rename": "重命名分类",
+      "renameFailed": "重命名分类失败。",
+      "delete": "删除分类",
+      "deleteConfirm": "确定删除分类“{name}”吗？",
+      "deleteHint": "仅当没有 SOP 使用该分类时才能删除。默认分类无法删除。",
+      "deleteSuccess": "分类已删除。",
+      "deleteFailed": "删除分类失败。"
+    },
+    "publicLock": {
+      "close": "关闭上传",
+      "open": "开放上传",
+      "closed": "公共 SOP 库上传已关闭。",
+      "opened": "公共 SOP 库上传已开放。",
+      "failed": "更新上传设置失败。",
+      "hint": "关闭后，任何人都无法向公共库上传。",
+      "notice": "公共 SOP 库的上传当前已被管理员关闭。"
+    },
+    "fields": {
+      "title": "标题",
+      "category": "分类",
+      "description": "描述",
+      "videoFile": "视频文件",
+      "videoHint": "可选。MP4/WebM/MOV，最大 1 GB。",
+      "thumbnail": "封面图片",
+      "documents": "文档",
+      "documentsHint": "PDF、Word、Excel、PPT、图片 —— 最多 10 个文件，每个 100 MB。",
+      "contentHint": "请添加文档、视频，或两者兼有 —— 至少需要一项。"
+    },
+    "upload": {
+      "title": "上传 SOP",
+      "submit": "上传",
+      "missingFields": "请输入标题并选择分类。",
+      "needContent": "请至少添加一个视频或文档文件。",
+      "success": "SOP 上传成功。",
+      "failed": "上传 SOP 失败。"
+    },
+    "edit": {
+      "currentFiles": "现有文件",
+      "replaceVideo": "替换视频（可选）",
+      "replaceThumbnail": "替换封面图片（可选）",
+      "addDocuments": "添加文档（可选）",
+      "remove": "移除",
+      "titleRequired": "标题不能为空。",
+      "success": "SOP 更新成功。",
+      "failed": "更新 SOP 失败。"
+    },
+    "details": {
+      "back": "返回 SOP 库",
+      "notFound": "未找到该 SOP。",
+      "noVideo": "该 SOP 无视频。",
+      "noDescription": "暂无描述。",
+      "documents": "文档",
+      "download": "打开 / 下载",
+      "officeNoPreview": "该文件无法在浏览器中预览，请下载后打开。",
+      "uploadedBy": "上传人",
+      "uploadedAt": "上传时间",
+      "views": "查看次数",
+      "copyLink": "复制分享链接",
+      "linkCopied": "链接已复制到剪贴板。",
+      "edit": "编辑",
+      "delete": "删除",
+      "deleteConfirm": "确定要删除此 SOP 吗？此操作无法撤销。",
+      "deleted": "SOP 已删除。",
+      "deleteFailed": "删除 SOP 失败。"
+    }
+  }
+}

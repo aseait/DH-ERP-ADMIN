@@ -1,0 +1,53 @@
+.md-modal .modal-content {
+  border-radius: var(--md-radius-xl);
+  border: 1px solid var(--md-border);
+  box-shadow: var(--md-shadow);
+}
+
+.md-radioRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.md-radio {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--md-border);
+  border-radius: var(--md-radius-md);
+  padding: 12px 12px;
+  background: var(--md-soft);
+  cursor: pointer;
+  user-select: none;
+  font-weight: 800;
+  color: var(--md-text);
+}
+
+.md-radio input {
+  transform: scale(1.05);
+}
+
+.md-radio.is-active {
+  border-color: rgba(21, 112, 239, 0.45);
+  box-shadow: 0 0 0 4px rgba(21, 112, 239, 0.1);
+  background: #ffffff;
+}
+
+.md-rejectBox {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(16, 24, 40, 0.16);
+}
+
+.md-rejectBox__label {
+  color: var(--md-muted);
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.md-modal__footer {
+  gap: 10px;
+}

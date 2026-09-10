@@ -1,0 +1,923 @@
+// Filter bar — mirrors Vue el-form :inline="true"
+.sl-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  .form-control,
+  .form-select {
+    font-size: 13px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    min-height: unset;
+    height: 32px;
+  }
+
+  .rs__control {
+    min-height: 32px !important;
+    height: 32px;
+  }
+
+  .rs__value-container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .rs__indicators {
+    height: 32px;
+  }
+}
+
+// Matches Vue el-form-item inline spacing
+.sl-fi {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 6px;
+  vertical-align: top;
+}
+
+// Clearable wrapper shared by CS, CI, SelectUser, SelectDestination
+.sl-wrap {
+  position: relative;
+  display: inline-block;
+
+  .form-select,
+  .form-control,
+  .rs__control {
+    width: 100%;
+  }
+}
+
+// × on selects — shown on hover, overlays the native dropdown arrow
+.sl-clear-select {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  color: #999;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 2px;
+  z-index: 2;
+}
+
+// × on text inputs — always visible when value present
+.sl-clear-input {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #bbb;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+  z-index: 2;
+}
+
+// Date range
+.sl-date-label {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+
+.sl-date-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sl-date-sep {
+  color: #888;
+}
+
+.sl-date-field {
+  position: relative;
+  display: inline-block;
+}
+
+.sl-date-placeholder {
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: #aaa;
+  pointer-events: none;
+  z-index: 1;
+  background: #fff;
+  padding-right: 4px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+// Hide browser's mm/dd/yyyy hint when field is empty so our placeholder shows cleanly
+.sl-date-field--empty .sl-date-input {
+  color: transparent;
+}
+
+.sl-date-input {
+  width: 132px;
+}
+
+.sl-date-clear {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0;
+}
+
+// Red counter badge pinned to top-right of a status tab
+.sl-tab-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #dc3545;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  padding: 0 3px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+// ─── Table (matches Vue el-table with #EBEEF5 header override) ───────────────
+
+.sl-table-card {
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+// The table only scrolls HORIZONTALLY (wide columns). Vertical scrolling is the
+// browser page scroll — one scrollbar on the right edge, natural wheel scroll —
+// instead of a separate short scroll region trapped inside the card.
+.sl-table-scroll {
+  overflow-x: auto;
+}
+
+// Filter bar + status tabs stay pinned just under the fixed top bar (70px) while
+// the page (and the table rows) scroll underneath.
+.sl-sticky-filters {
+  position: sticky;
+  top: 70px;
+  z-index: 20;
+  // Same colour as the page behind it (theme-aware) so scrolling rows don't
+  // show through and it doesn't read as a separate panel.
+  background-color: var(--vz-body-bg, #f3f6f9);
+  padding-top: 6px;
+  padding-bottom: 12px;
+
+  // Roll the tab strip's bottom margin into the wrapper's padding so the pinned
+  // bar has one clean bottom edge (the shadow header aligns to it).
+  .orderlist-status-tabs {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  // On small screens the filter bar is very tall — pinning it would swallow the
+  // viewport, so let it scroll away normally.
+  .sl-sticky-filters {
+    position: static;
+  }
+}
+
+// Shadow header row (StickyTableHeader.tsx) — a fixed clone of the table's
+// <thead> shown once the real header scrolls under the filter bar.
+.sl-sticky-header {
+  position: fixed;
+  z-index: 15;
+  overflow: hidden;
+  pointer-events: none;
+  display: none;
+  box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.18);
+
+  &.is-visible {
+    display: block;
+  }
+}
+
+.sl-sticky-header-inner {
+  overflow: hidden;
+  height: 100%;
+
+  table {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .sl-sticky-header {
+    display: none !important;
+  }
+}
+
+.sl-table {
+  min-width: 900px;
+  border-collapse: separate;
+  border-spacing: 0;
+  // Fixed layout so th widths are strictly respected — required for overflow ellipsis
+  table-layout: fixed;
+
+  // Sticky thead as a unit — lets individual <th> have position:relative for resize
+  // without breaking the header sticking at the top when scrolling down
+  thead { position: sticky; top: 0; z-index: 2; background: #ebeef5; }
+
+  // Header — Vue: --el-table-header-bg-color: #EBEEF5, text: #606266
+  thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #ebeef5;
+    color: #606266;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 14px;
+    border-bottom: 1px solid #dcdfe6;
+    border-right: 1px solid #e4e7ed;
+    white-space: normal;
+    word-break: break-word;
+    user-select: none;
+
+    &:last-child { border-right: none; }
+  }
+
+  // Body cells — Vue: 14px, #606266; overflow mirrors Vue show-overflow-tooltip
+  tbody td {
+    font-size: 14px;
+    color: #606266;
+    padding: 12px 14px;
+    border-bottom: 1px solid #ebeef5;
+    border-right: 1px solid #f2f3f7;
+    vertical-align: middle;
+    background: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:last-child { border-right: none; }
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  // Vue row hover: #F5F7FA
+  tbody tr:hover td { background: #f5f7fa !important; }
+
+  // Optimistic-update highlight — fades from blue tint back to white
+  tbody tr.sl-row-updated td {
+    animation: sl-row-highlight 0.9s ease forwards;
+  }
+
+  // Sticky-left (Assignee) — exempt from overflow clipping so the select renders normally
+  thead th.sl-col-sticky-left {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    background: #ebeef5;
+    box-shadow: 2px 0 6px -2px rgba(0, 0, 0, 0.10);
+  }
+  tbody td.sl-col-sticky-left {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 2px 0 6px -2px rgba(0, 0, 0, 0.08);
+    overflow: visible;
+    white-space: normal;
+  }
+  tbody tr:hover td.sl-col-sticky-left { background: #f5f7fa !important; }
+
+  // Sticky-right (Action) — buttons must not be clipped
+  thead th.sl-col-sticky-right {
+    position: sticky;
+    right: 0;
+    z-index: 3;
+    background: #ebeef5;
+    box-shadow: -2px 0 6px -2px rgba(0, 0, 0, 0.10);
+  }
+  tbody td.sl-col-sticky-right {
+    position: sticky;
+    right: 0;
+    z-index: 1;
+    background: #fff;
+    box-shadow: -2px 0 6px -2px rgba(0, 0, 0, 0.08);
+    overflow: visible;
+    white-space: normal;
+  }
+  tbody tr:hover td.sl-col-sticky-right { background: #f5f7fa !important; }
+}
+
+// Table-wide modifier for tables where EVERY row is permanently an edit
+// form (e.g. CreateQuote's added-lines table — no view/edit toggle).
+.sl-table.sl-table--wrap {
+  table-layout: auto;
+
+  tbody td {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+}
+
+// Row-scoped modifier for tables that toggle individual rows into an edit
+// form (e.g. QuoteList). Keeps every other row single-line/truncated exactly
+// like SeaMarine's table, and only relaxes wrapping for the one row
+// currently being edited, whose cells legitimately hold multi-line content
+// (stacked inputs, suggestion chips).
+.sl-table tbody tr.sl-row-editing td {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+// Column resize handle — sits at the right edge of each resizable <th>
+.sl-col-resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  cursor: col-resize;
+  touch-action: none;
+  &::after {
+    content: '';
+    position: absolute;
+    right: 1px;
+    top: 20%;
+    bottom: 20%;
+    width: 2px;
+    border-radius: 1px;
+    background: transparent;
+    transition: background 0.15s;
+  }
+  &:hover::after,
+  &:active::after { background: #409eff; }
+}
+
+// Fixed column widths
+.sl-th-assignee      { width: 200px; min-width: 200px; }
+.sl-th-client        { width: 130px; min-width: 130px; }
+.sl-th-actions-wide  { width: 210px; min-width: 210px; }
+.sl-th-actions       { width: 100px; min-width: 100px; }
+
+// Filter width utilities (replaces inline style={{ width: N }})
+.sl-w-75  { width: 75px; }
+.sl-w-80  { width: 80px; }
+.sl-w-90  { width: 90px; }
+.sl-w-100 { width: 100px; }
+.sl-w-110 { width: 110px; }
+.sl-w-120 { width: 120px; }
+.sl-w-130 { width: 130px; }
+.sl-w-140 { width: 140px; }
+.sl-w-150 { width: 150px; }
+.sl-w-160 { width: 160px; }
+.sl-w-170 { width: 170px; }
+.sl-w-180 { width: 180px; }
+.sl-w-200 { width: 200px; }
+.sl-w-210 { width: 210px; }
+.sl-w-220 { width: 220px; }
+.sl-w-240 { width: 240px; }
+.sl-w-250 { width: 250px; }
+.sl-w-260 { width: 260px; }
+.sl-w-310 { width: 310px; }
+.sl-w-320 { width: 320px; }
+
+// Clearable input — pad right when the × button is visible
+.sl-wrap.sl-has-clear .form-control { padding-right: 24px; }
+
+// Assignee dropdown inside the table
+.sl-assignee-input { min-width: 140px; width: 100%; }
+
+// Track modal scrollable body
+.sl-track-modal-body { max-height: 60vh; overflow-y: auto; }
+
+// Small bold tag text under a table cell's main value (e.g. fee unit / additional info)
+.sl-text-tag-sm { font-size: 11px; font-weight: 600; }
+
+// Extra-small helper/hint text (e.g. FSA suggestion labels)
+.sl-text-2xs { font-size: 0.7rem; }
+.sl-text-xs  { font-size: 0.75rem; }
+.sl-text-xs-btn { font-size: 0.8rem; }
+.sl-text-sm  { font-size: 13px; }
+
+// Filter card pinned below the top nav (Quote list)
+.sl-sticky-filter-card {
+  position: sticky;
+  top: 70px;
+  z-index: 20;
+  background: var(--bs-body-bg, #fff);
+}
+
+// Monospace template textarea (Quote email-template modal)
+.sl-template-textarea { font-family: monospace; font-size: 13px; }
+
+// Inline radio label/input pair (Quote form's currency / dock choices)
+.sl-radio-label { cursor: pointer; }
+.sl-radio-input { margin: 0; }
+
+// Quote-create two-column layout
+.quote-form-col-left  { max-width: 560px; }
+.quote-form-col-right { flex: 1 1 0; min-width: 0; }
+.quote-form-add-btn   { width: 200px; }
+.quote-form-submit-btn { width: 220px; }
+.quote-form-textarea  { font-size: 14px; resize: vertical; }
+
+// Track event time column
+.sl-track-time { min-width: 140px; }
+
+// Colored status text — mirrors Vue el-text :type="success/danger/warning/primary"
+.sl-text-success { color: #67c23a; font-weight: 500; }
+.sl-text-danger  { color: #f56c6c; font-weight: 500; }
+.sl-text-warning { color: #e6a23c; font-weight: 500; }
+.sl-text-primary { color: #409eff; font-weight: 500; }
+
+
+
+// ─── Phone responsive ────────────────────────────────────────────────────────
+
+@media (max-width: 575.98px) {
+  // Each filter item fills the full row
+  .sl-fi {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  // All sl-wrap containers (CI, CS, SelectUser, SelectDestination) go full-width
+  .sl-wrap,
+  .sl-w-180,
+  .sl-w-200,
+  .sl-w-220 {
+    width: 100% !important;
+    display: block;
+  }
+
+  // Date inputs flex to fill remaining space instead of fixed px
+  .sl-date-input {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+  }
+
+  // Date row: stack start / sep / end vertically on very narrow screens
+  .sl-date-row {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}
+
+// Tighter gap for status tabs + disable sticky columns on mobile
+@media (max-width: 767.98px) {
+  .orderlist-status-tabs {
+    gap: 8px;
+  }
+
+  .orderlist-status-tab {
+    min-width: 80px;
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  // On mobile, un-stick the action column on the right (it eats too much space)
+  // but keep the assignee column (sl-col-sticky-left) pinned so it stays visible.
+  .sl-table {
+    thead th.sl-col-sticky-right,
+    tbody td.sl-col-sticky-right {
+      position: static;
+      box-shadow: none;
+      z-index: auto;
+    }
+  }
+}
+
+// ─── Pagination — mirrors Vue el-pagination ──────────────────────────────────
+
+.sl-pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 16px;
+  padding: 0 4px;
+  font-size: 13px;
+  color: #606266;
+  user-select: none;
+}
+
+.sl-pg-total {
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+// ─── Page-level action buttons (Export / Upload / Train ETA) ─────────────────
+
+.sl-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 0 4px;
+}
+
+.sl-page-size-select {
+  width: auto;
+  min-width: 100px;
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 13px;
+  height: 28px;
+  padding: 0 6px;
+}
+
+.sl-pg-btn {
+  min-width: 28px;
+  height: 28px;
+  padding: 0 4px;
+  border: 1px solid #dcdfe6;
+  border-radius: 2px;
+  background: #fff;
+  color: #606266;
+  font-size: 13px;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+
+  &:hover:not(:disabled):not(.active) {
+    color: #409eff;
+    border-color: #c6e2ff;
+    background: #ecf5ff;
+  }
+
+  &.active {
+    background: #409eff;
+    border-color: #409eff;
+    color: #fff;
+    font-weight: 600;
+    cursor: default;
+  }
+
+  &:disabled {
+    color: #c0c4cc;
+    border-color: #e4e7ed;
+    cursor: not-allowed;
+    background: #f4f4f5;
+  }
+}
+
+.sl-pg-ellipsis {
+  min-width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #909399;
+  font-size: 13px;
+}
+
+.sl-pg-jumper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+.sl-jump-input {
+  width: 50px;
+  height: 28px;
+  border: 1px solid #dcdfe6;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 13px;
+  color: #606266;
+  padding: 0 4px;
+  outline: none;
+
+  &:focus { border-color: #409eff; }
+
+  -moz-appearance: textfield;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+}
+
+@media (max-width: 767.98px) {
+  .sl-pagination { justify-content: center; }
+}
+
+// Row highlight animation triggered by optimistic status update
+@keyframes sl-row-highlight {
+  0%   { background-color: #dbeafe; }
+  40%  { background-color: #dbeafe; }
+  100% { background-color: transparent; }
+}
+
+// ─── Logistic table: 4 chained sticky-left columns ───────────────────────────
+// Vue logistic.vue: user_name, container_note, container_number, destination all fixed="left"
+// Each needs an explicit left offset = sum of all previous sticky column widths.
+
+.sl-log-col-username    { width: 150px; min-width: 150px; }
+.sl-log-col-note        { width: 200px; min-width: 200px; }
+.sl-log-col-container   { width: 220px; min-width: 220px; }
+.sl-log-col-destination { width: 150px; min-width: 150px; }
+
+.sl-log-table {
+  thead th, tbody td {
+    &.sl-col-sticky-left  { left: 0; }
+    &.sl-col-sticky-left2 { position: sticky; left: 150px;  z-index: 1; background: #fff; box-shadow: none; overflow: hidden; white-space: nowrap; }
+    &.sl-col-sticky-left3 { position: sticky; left: 350px;  z-index: 1; background: #fff; box-shadow: none; overflow: visible; white-space: normal; }
+    &.sl-col-sticky-left4 { position: sticky; left: 570px;  z-index: 1; background: #fff; box-shadow: 2px 0 6px -2px rgba(0,0,0,.08); overflow: hidden; white-space: nowrap; }
+  }
+  thead th {
+    &.sl-col-sticky-left2 { background: #ebeef5; z-index: 3; }
+    &.sl-col-sticky-left3 { background: #ebeef5; z-index: 3; }
+    &.sl-col-sticky-left4 { background: #ebeef5; z-index: 3; }
+  }
+  tbody tr:hover td {
+    &.sl-col-sticky-left2,
+    &.sl-col-sticky-left3,
+    &.sl-col-sticky-left4 { background: #f5f7fa !important; }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .sl-log-table {
+    thead th, tbody td {
+      &.sl-col-sticky-left2,
+      &.sl-col-sticky-left3,
+      &.sl-col-sticky-left4 { position: static; box-shadow: none; z-index: auto; }
+    }
+  }
+}
+
+// Multi-container cells (logistic grouping: one cell = multiple containers stacked)
+.sl-multi-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  white-space: nowrap;
+
+  > div {
+    line-height: 1.4;
+    border-bottom: 1px dashed #e4e7ed;
+    padding-bottom: 3px;
+
+    &:last-child { border-bottom: none; padding-bottom: 0; }
+  }
+}
+
+// Truncated cell text — triggers OverflowTooltip on hover
+.sl-cell-truncate {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  cursor: default;
+}
+
+// Min-width utilities for table column headers
+.sl-mw-90  { min-width: 90px; }
+.sl-mw-100 { min-width: 100px; }
+.sl-mw-110 { min-width: 110px; }
+.sl-mw-120 { min-width: 120px; }
+.sl-mw-130 { min-width: 130px; }
+.sl-mw-140 { min-width: 140px; }
+.sl-mw-150 { min-width: 150px; }
+.sl-mw-160 { min-width: 160px; }
+.sl-mw-170 { min-width: 170px; }
+.sl-mw-180 { min-width: 180px; }
+.sl-mw-190 { min-width: 190px; }
+.sl-mw-200 { min-width: 200px; }
+.sl-mw-210 { min-width: 210px; }
+.sl-mw-220 { min-width: 220px; }
+.sl-mw-240 { min-width: 240px; }
+.sl-mw-250 { min-width: 250px; }
+.sl-mw-260 { min-width: 260px; }
+.sl-mw-310 { min-width: 310px; }
+.sl-mw-320 { min-width: 320px; }
+
+// OverflowTooltip trigger span
+.sl-ot-trigger {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 190px;
+}
+
+// Copyable overflow tooltip — mirrors Vue show-overflow-tooltip
+.sl-ot-popup {
+  position: fixed;
+  max-width: 320px;
+  padding: 8px 12px;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  z-index: 9999;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  user-select: text;
+  cursor: text;
+  pointer-events: auto;
+}
+
+// Row-action Confirm button — clickable vs disabled must read at a glance
+.sl-confirm-btn {
+  position: relative;
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease, box-shadow .15s ease;
+
+  &:not(:disabled) {
+    box-shadow: 0 1px 2px rgba(64, 158, 255, 0.15);
+
+    &:hover {
+      box-shadow: 0 2px 8px rgba(64, 158, 255, 0.35);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: transparent;
+    border-color: #c9ccd2;
+    color: #9aa0ac;
+    box-shadow: none;
+  }
+}
+
+/* ─── Dark mode ────────────────────────────────────────────────────────────── */
+[data-bs-theme="dark"] {
+  .sl-confirm-btn:disabled {
+    border-color: #6b7280;
+    color: #98a2b3;
+  }
+
+  .sl-table-card {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .sl-table {
+    thead { background: #22272e; }
+
+    thead th {
+      background: #22272e;
+      color: #adbac7;
+      border-bottom-color: rgba(255, 255, 255, 0.08);
+      border-right-color: rgba(255, 255, 255, 0.06);
+    }
+
+    tbody td {
+      background: #1a1d21;
+      color: #adbac7;
+      border-bottom-color: rgba(255, 255, 255, 0.06);
+      border-right-color: rgba(255, 255, 255, 0.04);
+    }
+
+    tbody tr:hover td { background: #22272e !important; }
+
+    tbody tr.sl-row-updated td {
+      animation: sl-row-highlight-dark 0.9s ease forwards;
+    }
+
+    thead th.sl-col-sticky-left  { background: #22272e; }
+    thead th.sl-col-sticky-right { background: #22272e; }
+    tbody td.sl-col-sticky-left  { background: #1a1d21; }
+    tbody td.sl-col-sticky-right { background: #1a1d21; }
+    tbody tr:hover td.sl-col-sticky-left  { background: #22272e !important; }
+    tbody tr:hover td.sl-col-sticky-right { background: #22272e !important; }
+  }
+
+  .sl-log-table {
+    thead th {
+      &.sl-col-sticky-left2,
+      &.sl-col-sticky-left3,
+      &.sl-col-sticky-left4 { background: #22272e; }
+    }
+    tbody td {
+      &.sl-col-sticky-left2,
+      &.sl-col-sticky-left3,
+      &.sl-col-sticky-left4 { background: #1a1d21; }
+    }
+    tbody tr:hover td {
+      &.sl-col-sticky-left2,
+      &.sl-col-sticky-left3,
+      &.sl-col-sticky-left4 { background: #22272e !important; }
+    }
+  }
+
+  .sl-multi-cont > div { border-bottom-color: rgba(255, 255, 255, 0.08); }
+
+  .sl-clear-select {
+    background: #2d333b;
+    color: #adbac7;
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .sl-date-label { color: #8b949e; }
+  .sl-date-sep   { color: #8b949e; }
+  .sl-date-clear { color: #8b949e; }
+  .sl-date-placeholder { background: #22272e; color: #8b949e; }
+
+  .sl-pagination  { color: #8b949e; }
+  .sl-pg-ellipsis { color: #8b949e; }
+
+  .sl-pg-btn {
+    background: #22272e;
+    color: #adbac7;
+    border-color: rgba(255, 255, 255, 0.12);
+
+    &:hover:not(:disabled):not(.active) {
+      background: #2d333b;
+      border-color: rgba(64, 158, 255, 0.5);
+      color: #409eff;
+    }
+    &.active {
+      background: #409eff;
+      border-color: #409eff;
+      color: #fff;
+    }
+    &:disabled {
+      background: #1a1d21;
+      color: rgba(255, 255, 255, 0.25);
+      border-color: rgba(255, 255, 255, 0.08);
+    }
+  }
+
+  .sl-jump-input {
+    background: #22272e;
+    color: #adbac7;
+    border-color: rgba(255, 255, 255, 0.12);
+    &:focus { border-color: #409eff; }
+  }
+
+  // react-select dark mode (classNamePrefix="rs")
+  .rs__control {
+    background-color: #22272e !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    &:hover { border-color: rgba(255, 255, 255, 0.22) !important; }
+  }
+  .rs__control--is-focused {
+    border-color: rgba(64, 158, 255, 0.6) !important;
+    box-shadow: 0 0 0 3px rgba(64, 158, 255, 0.15) !important;
+  }
+  .rs__single-value    { color: #e9ecef !important; }
+  .rs__placeholder     { color: rgba(255, 255, 255, 0.4) !important; }
+  .rs__input-container { color: #e9ecef !important; }
+  .rs__menu {
+    background-color: #22272e !important;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+  }
+  .rs__option {
+    background-color: transparent !important;
+    color: #adbac7 !important;
+    &.rs__option--is-focused  { background-color: #2d333b !important; }
+    &.rs__option--is-selected {
+      background-color: rgba(64, 158, 255, 0.18) !important;
+      color: #409eff !important;
+    }
+  }
+  .rs__indicator {
+    color: rgba(255, 255, 255, 0.45) !important;
+    &:hover { color: rgba(255, 255, 255, 0.7) !important; }
+  }
+  .rs__indicator-separator { background-color: rgba(255, 255, 255, 0.12) !important; }
+  .rs__clear-indicator {
+    color: rgba(255, 255, 255, 0.45) !important;
+    &:hover { color: #e9ecef !important; }
+  }
+  .rs__multi-value        { background-color: #2d333b !important; }
+  .rs__multi-value__label { color: #adbac7 !important; }
+  .rs__multi-value__remove {
+    color: #8b949e !important;
+    &:hover {
+      background-color: rgba(239, 68, 68, 0.2) !important;
+      color: #f87171 !important;
+    }
+  }
+}
+
+@keyframes sl-row-highlight-dark {
+  0%   { background-color: rgba(37, 99, 235, 0.25); }
+  40%  { background-color: rgba(37, 99, 235, 0.25); }
+  100% { background-color: transparent; }
+}

@@ -1,0 +1,75 @@
+.marine-an-emf-upload {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 40px 0;
+
+  &__card {
+    border-radius: 16px;
+    border: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  &__card-body {
+    padding: 1.5rem;
+
+    @media (min-width: 768px) {
+      padding: 3rem;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 0;
+    color: #6c757d;
+  }
+
+  &__info-box {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 16px;
+    background: #fafafa;
+    margin-bottom: 20px;
+  }
+
+  &__info-row {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__section {
+    margin-bottom: 20px;
+  }
+
+  &__helper-text {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 8px;
+  }
+
+  &__selected-box {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+  }
+
+  &__file-list {
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-left: 18px;
+  }
+
+  &__submit-btn {
+    width: 100%;
+  }
+}

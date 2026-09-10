@@ -1,0 +1,1511 @@
+{
+  "dashboard": {
+    "recentEvents": "Recent Events",
+    "noEvents": "No events.",
+    "pendingInProgress": "Orders in preparation",
+    "completed": "Orders in progress",
+    "eventType": "Event Type",
+    "awb": "AWB",
+    "containerNumber": "Container Number",
+    "cargoNo": "Waybill No",
+    "status": "File Status",
+    "pending": "Incomplete",
+    "noTickets": "No tickets.",
+    "loadingMore": "Loading more...",
+    "viewDetails": "View Details",
+    "goUpload": "Go Upload",
+    "view": "View Details"
+  },
+  "ticketSummary": {
+    "title": "Ticket Summary",
+    "nonClosedTitle": "Non-Closed Ticket Summary",
+    "refresh": "Refresh",
+    "loading": "Loading...",
+    "tickets": "Tickets",
+    "count": "Count",
+    "failedLoad": "Failed to load ticket summary",
+    "failedLoadNonClosed": "Failed to load non-closed ticket summary",
+    "totalTickets": "Total Tickets",
+    "marineTickets": "Marine Tickets",
+    "airTickets": "Air Tickets",
+    "truckTickets": "Truck Tickets"
+  },
+  "menu": {
+    "menuHeader": "Menu",
+    "pagesHeader": "Pages",
+    "componentsHeader": "Components",
+    "home": "Home",
+    "notification": "Notification",
+    "financeNotification": "Finance Notification",
+    "quote": "Quote",
+    "createQuote": "Create Quote",
+    "quoteList": "Quote List",
+    "createOrder": "Create Order",
+    "createService": "Create Service",
+    "customerOrder": "Customer Order",
+    "orderReview": "Order Review",
+    "seaOrder": "Sea Order",
+    "customsClearance": "Customs Clearance",
+    "containerPickup": "Container Pickup",
+    "warehouse": "Warehouse",
+    "airOrder": "Air Order",
+    "airPickup": "Pickup",
+    "truckOrder": "Truck Order",
+    "usaToCa": "USA To CA",
+    "sop": "SOP Management",
+    "sopDh": "SOP DH",
+    "sopPublic": "SOP Public",
+    "itSupport": "Supporting Tickets",
+    "submitTicket": "Submit Ticket",
+    "ticketList": "Ticket List",
+    "userManagement": "User Management",
+    "createUser": "Create User",
+    "userList": "User List",
+    "myOrder": "My Order",
+    "dashboards": "Dashboards",
+    "apps": "Apps",
+    "authentication": "Authentication",
+    "pages": "Pages",
+    "landing": "Landing",
+    "baseUi": "Base UI",
+    "advanceUi": "Advance UI",
+    "widgets": "Widgets",
+    "forms": "Forms",
+    "tables": "Tables",
+    "charts": "Charts",
+    "icons": "Icons",
+    "maps": "Maps",
+    "multiLevel": "Multi Level",
+    "analytics": "Analytics",
+    "crm": "CRM",
+    "ecommerce": "Ecommerce",
+    "crypto": "Crypto",
+    "projects": "Projects",
+    "nft": "NFT",
+    "job": "Job",
+    "blog": "Blog",
+    "calendar": "Calendar",
+    "mainCalendar": "Main Calendar",
+    "monthGrid": "Month Grid",
+    "chat": "Chat",
+    "email": "Email",
+    "mailbox": "Mailbox",
+    "emailTemplates": "Email Templates",
+    "fileManager": "File Manager",
+    "toDo": "To Do",
+    "profile": "Profile",
+    "simplePage": "Simple Page",
+    "settings": "Settings",
+    "baseAlerts": "Alerts",
+    "baseBadges": "Badges",
+    "baseButtons": "Buttons"
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "fcl": "FCL",
+    "lcl": "LCL",
+    "edit": "Edit",
+    "upload": "Upload",
+    "confirm": "Confirm",
+    "approve": "Approve",
+    "reject": "Reject",
+    "cache": "Cache",
+    "noData": "No data",
+    "selectImporter": "Select Importer",
+    "select": "Select",
+    "all": "All",
+    "warning": "Warning",
+    "noPermission": "No Permission",
+    "refresh": "Refresh",
+    "loading": "Loading...",
+    "comingSoon": "Coming Soon",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "add": "Add Row",
+    "submit": "Submit All",
+    "search": "Search",
+    "reset": "Reset",
+    "prev": "Prev",
+    "next": "Next",
+    "save": "Save",
+    "close": "Close"
+  },
+  "filePreview": {
+    "noPreview": "This file type can't be previewed in the browser. Use the button below to open or download it.",
+    "openInNewTab": "Open in new tab",
+    "viewerNote": "If the preview doesn't load, use \"Open in new tab\"."
+  },
+  "info": {
+    "assignee": "UserName",
+    "creator": "Creator",
+    "copyLink": "Copy AN/EMF Link",
+    "txt65": "Customs clearance update time",
+    "txt79": "Reject Reason",
+    "txt106": "Zip Download",
+    "zipPreparing": "Preparing zip download…",
+    "zipDone": "Download complete!",
+    "zipFailed": "Failed to download zip",
+    "confirmDeleteFile": "Delete this file?\n{fileName}",
+    "fileDeleteSuccess": "File deleted successfully",
+    "fileDeleteFailed": "Delete failed",
+    "missingIdsForLink": "Missing cb_marine_id or container number",
+    "createLinkFailed": "Failed to create upload link",
+    "noServiceIdForDownload": "No service id found for download",
+    "cbTicketUpdated": "CB ticket updated",
+    "cbTicketUpdateFailed": "Failed to update CB ticket",
+    "logisticTicketUpdated": "Logistic ticket updated",
+    "logisticTicketUpdateFailed": "Failed to update Logistic ticket",
+    "warehouseTicketUpdated": "Warehouse ticket updated",
+    "warehouseTicketUpdateFailed": "Failed to update Warehouse ticket",
+    "airCbUpdated": "Air CB updated",
+    "airCbUpdateFailed": "Failed to update Air CB",
+    "airLogisticUpdated": "Air Logistic updated",
+    "airLogisticUpdateFailed": "Failed to update Air Logistic",
+    "airWarehouseUpdated": "Air Warehouse updated",
+    "airWarehouseUpdateFailed": "Failed to update Air Warehouse",
+    "truckCbUpdated": "Truck CB updated",
+    "truckCbUpdateFailed": "Failed to update Truck CB",
+    "truckLogisticUpdated": "Truck Logistic updated",
+    "truckLogisticUpdateFailed": "Failed to update Truck Logistic",
+    "truckUsToCaUpdated": "Truck US→CA updated",
+    "truckUsToCaUpdateFailed": "Failed to update Truck US→CA",
+    "unsavedChangesConfirm": "You have unsaved changes that have not been saved. Leave without saving?",
+    "unsavedChangesBeforeUnload": "You have unsaved changes that have not been saved.",
+    "unsavedChangesLeaveBtn": "Leave Anyway"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "steps": {
+    "description": "Real-time status updates"
+  },
+  "actions": {
+    "viewFile": "View File"
+  },
+  "marineDetails": {
+    "releaseCad": "Release CAD",
+    "importers": " importers"
+  },
+  "createOrder": {
+    "title": "Create Order",
+    "breadcrumb": "Orders",
+    "pageTitle": "Create Order | DH",
+    "loadingDestinations": "Loading destinations...",
+    "ready": "Ready",
+    "aria": {
+      "steps": "Create order steps"
+    },
+    "step1": {
+      "header": "Step 1 of 2 — Select Service",
+      "subheader": "Choose Marine / Air / Truck, then click Next.",
+      "chooseService": "Choose a service",
+      "chooseServiceHint": "Select one service to start. You can configure service options in the next step.",
+      "containerExistsConfirm": "These container numbers already exist: {containers}. Do you want to create again?"
+    },
+    "step2": {
+      "header": "Step 2 of 2 — Create Order",
+      "subheader": "Fill in details, then Create & Go To Upload.",
+      "completeBelow": "Complete the details below"
+    },
+    "stepper": {
+      "step1": {
+        "name": "Select Service",
+        "meta": "Pick one service"
+      },
+      "step2": {
+        "name": "Create Order",
+        "meta": "Enter shipment info"
+      }
+    },
+    "services": {
+      "serviceTitle": "Shipping Type",
+      "marine": "Marine",
+      "air": "Air",
+      "truck": "Truck",
+      "parse": "PARS",
+      "marineDesc": "Ocean containers: destination, ERS, FCL/LCL, notes.",
+      "airDesc": "AWB, shipping units, weights, final destination, ETA.",
+      "truckDesc": "Container/ref, USA port, ERS, delivery location, notes.",
+      "marineFoot": "Customs Brokerage, Pickup, Logistic",
+      "airFoot": "Customs Brokerage, Pickup, Logistic",
+      "truckFoot": "Customs Brokerage, Pickup, USA to CA"
+    },
+    "options": {
+      "title": "Service Options",
+      "op1": "Customs Clearance",
+      "marine": {
+        "op2": "Container Pickup",
+        "op3": "Warehouse"
+      },
+      "air": {
+        "op2": "Cargo Collection",
+        "op3": "Warehouse"
+      },
+      "truck": {
+        "op2": "Pickup / Delivery",
+        "op3": "USA to Canada"
+      }
+    },
+    "common": {
+      "finalDestination": "Final Destination",
+      "selectDestination": "Select destination",
+      "ersOptional": "ERS (Optional)",
+      "fclLcl": "FCL / LCL",
+      "noteOptional": "Note (optional)",
+      "select": "Select",
+      "selectClient": "Select Client",
+      "selectClientPlaceholder": "Search client...",
+      "deliveryCity": "Delivery City",
+      "postcode": "Post Code"
+    },
+    "marine": {
+      "title": "Marine Details",
+      "containerNumbers": "Container Number(s)",
+      "containerPlaceholder": "Container Number",
+      "goWarehouse": "Is In Warehouse",
+      "whetherNeedPickUp": "Need Pick Up"
+    },
+    "air": {
+      "title": "Air Details",
+      "awb": "AWB",
+      "awbPlaceholder": "784-03190564",
+      "etaOptional": "ETA (Optional)",
+      "shippingUnits": "Shipping Units",
+      "grossWeight": "Gross Weight",
+      "chargeableWeight": "Chargeable Weight"
+    },
+    "truck": {
+      "title": "Truck Details",
+      "container": "Container",
+      "containerPlaceholder": "Container / Reference",
+      "destinationCanada": "Destination of Canada",
+      "departure": "Departure",
+      "usaPort": "Departure"
+    },
+    "actions": {
+      "next": "Next",
+      "back": "Back",
+      "remove": "Remove",
+      "addContainer": "Add another container",
+      "creating": "Creating...",
+      "createGoUpload": "Create & Go To Upload",
+      "viewFile": "View File"
+    },
+    "errors": {
+      "missingUserId": "Missing user id in session. Please login again.",
+      "pickAtLeastOneOption": "Please select at least one service option.",
+      "noPermissionForService": "You do not have permission to create this service.",
+      "failedCreate": "Failed to create order.",
+      "marine": {
+        "needContainer": "Marine: please input at least one container number.",
+        "badContainer": "Marine: container number \"{{c}}\" is invalid. Must be 4 letters followed by 7 digits.",
+        "needDestination": "Marine: destination is required.",
+        "needGoWarehouse": "Marine: please select whether it goes to warehouse.",
+        "needPickupContainer": "Marine: please select whether it goes to Pick Up.",
+        "needDeliveryCityThirdParty": "Marine: delivery city is required when Go Warehouse is Third Party.",
+        "needPostcodeThirdParty": "Marine: postcode is required when Go Warehouse is Third Party.",
+        "badCanadianPostcode": "Marine: invalid Canadian postcode format. Example: M5V 2T6."
+      },
+      "air": {
+        "needAwb": "Air: AWB is required.",
+        "badAwbExample": "Invalid AWB format. Expected format: {{example}}",
+        "needShippingUnits": "Air: shipping units is required.",
+        "needGrossWeight": "Air: gross weight is required.",
+        "needChargeableWeight": "Air: chargeable weight is required.",
+        "needDestination": "Air: final destination is required."
+      },
+      "truck": {
+        "needContainer": "Truck: please input at least one container number / reference.",
+        "needUsaPort": "Truck: USA port is required.",
+        "needDl": "Truck: delivery location (DL) is required."
+      }
+    }
+  },
+  "uploadMarine": {
+    "title": "Upload (Marine)",
+    "breadcrumb": "Orders",
+    "prepareListWithServices": "Prepare a list ({{services}})",
+    "serviceOptions": {
+      "customs": "Customs Clearance",
+      "pickup": "Container Pickup",
+      "warehouse": "Warehouse",
+      "none": "No service selected"
+    },
+    "prepareList": "Prepare a list",
+    "prepareListWithValue": "Prepare a list ({{value}})",
+    "idsLine": "cb_marine_id: {{cb}} | logistic_marine_id: {{logistic}} | wms_marine_id: {{wms}}",
+    "labels": {
+      "customsImporter": "Customs Clearance Importer",
+      "selected": "Selected",
+      "poaImporter": "POA / Importer"
+    },
+    "fileTitles": {
+      "anEmf": "AN/EMF",
+      "packingInvoice": "Packing List/Invoice",
+      "billOfLading": "Bill of Lading",
+      "deliveryInstructions": "Delivery Instructions",
+      "telex": "Telex",
+      "pickupNumber": "Pickup number",
+      "others": "Others"
+    },
+    "actions": {
+      "back": "Back",
+      "cancel": "Cancel",
+      "proceed": "Yes, proceed",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "modals": {
+      "missingFiles": {
+        "title": "Missing files",
+        "desc": "Some required files are missing. You can still proceed, but please ensure to address this issue if needed.",
+        "missing": "Missing"
+      },
+      "noFiles": {
+        "title": "No files uploaded",
+        "desc": "You didn't upload any files. You can still proceed, but please ensure to upload them later if needed."
+      }
+    },
+    "errors": {
+      "selectPoaImporter": "Please select POA / Importer.",
+      "missingCbMarineId": "Missing cb_marine_id in URL.",
+      "submitFailed": "Submit failed"
+    }
+  },
+  "uploadFile": {
+    "unknown": "Unknown",
+    "actions": {
+      "chooseFiles": "Choose Files",
+      "remove": "Remove"
+    },
+    "dropzone": {
+      "disabled": "Uploading disabled",
+      "dropToAdd": "Drop files to add them",
+      "dragOrClick": "Drag & drop files here, or click"
+    },
+    "empty": "No files selected",
+    "errors": {
+      "invalidFile": "Invalid file.",
+      "invalidType": "File {{name}} has an invalid type (mime={{mime}}, ext={{ext}})."
+    }
+  },
+  "addPoa": {
+    "title": "Importer / POA",
+    "selectPlaceholder": "Select importer",
+    "uploadHint": "Upload a new POA (optional). After upload, it will appear in the dropdown.",
+    "poaNamePlaceholder": "POA Name",
+    "poaExists": "POA name already exists",
+    "poaRequired" : "Please select an existing POA or upload a new POA.",
+    "actions": {
+      "upload": "Upload POA",
+      "uploading": "Uploading...",
+      "fileSelected": "file selected"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    }
+  },
+  "uploadAir": {
+    "title": "Upload (Air)",
+    "breadcrumb": "Orders",
+    "prepareList": "Prepare a list",
+    "idsLine": "cb_air_id: {{cb}} | logistic_air_id: {{logistic}} | wms_air_id: {{wms}}",
+    "prepareListWithServices": "Prepare a list ({{services}})",
+    "serviceOptions": {
+      "customs": "Customs Clearance",
+      "pickup": "Container Pickup",
+      "warehouse": "Warehouse",
+      "none": "No service selected"
+    },
+    "labels": {
+      "customsImporter": "Customs Clearance Importer",
+      "selected": "Selected",
+      "importerPoa": "Importer (POA)"
+    },
+    "fileTitles": {
+      "anEmf": "AN/EMF",
+      "packingInvoice": "Packing List/Invoice",
+      "billOfLading": "Bill of Lading",
+      "deliveryInstructions": "Delivery Instructions",
+      "others": "Others"
+    },
+    "missing": {
+      "atLeastOneFile": "At least 1 file"
+    },
+    "actions": {
+      "back": "Back",
+      "cancel": "Cancel",
+      "proceed": "Yes, proceed",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "modals": {
+      "missingFiles": {
+        "title": "Missing files",
+        "desc": "Some required files are missing. You can still proceed, but please ensure to address this issue if needed.",
+        "missing": "Missing"
+      }
+    },
+    "errors": {
+      "submitFailed": "Submit failed"
+    }
+  },
+  "uploadTruck": {
+    "title": "Upload (Truck)",
+    "breadcrumb": "Orders",
+    "prepareList": "Prepare a list",
+    "prepareListWithValue": "Prepare a list ({{value}})",
+    "idsLine": "truck_cb_id: {{cb}} | truck_logistic_id: {{logistic}} | truck_us_ca_id: {{usca}}",
+    "prepareListWithServices": "Prepare a list ({{services}})",
+    "serviceOptions": {
+      "customs": "Customs Clearance",
+      "pickupDelivery": "Pickup / Delivery",
+      "usaToCanada": "USA to Canada",
+      "type4": "Service Option",
+      "none": "No service selected"
+    },
+    "labels": {
+      "customsImporter": "Customs Clearance Importer",
+      "selected": "Selected",
+      "importerPoa": "Importer (POA)"
+    },
+    "fileTitles": {
+      "anEmf": "AN/EMF",
+      "packingInvoice": "Packing List/Invoice",
+      "separateCargoFiles": "Separate Cargo Files",
+      "hbl": "HBL",
+      "mbl": "MBL",
+      "parsNumber": "PARS number",
+      "others": "Others"
+    },
+    "missing": {
+      "atLeastOneFile": "At least 1 file"
+    },
+    "actions": {
+      "back": "Back",
+      "cancel": "Cancel",
+      "proceed": "Yes, proceed",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "modals": {
+      "missingFiles": {
+        "title": "Missing files",
+        "desc": "Some required files are missing. You can still proceed, but please ensure to address this issue if needed.",
+        "missing": "Missing"
+      }
+    },
+    "errors": {
+      "submitFailed": "Submit failed"
+    }
+  },
+  "orderList": {
+    "title": "Order List",
+    "breadcrumb": "Orders",
+    "filters": {
+      "service": "Service",
+      "status": "Order Status",
+      "destination": "Destination",
+      "serviceState": "Service Stage",
+      "portEta": "Port ETA",
+      "trainEta": "Train ETA",
+      "refresh": "Refresh"
+    },
+    "table": {
+      "type": "Type",
+      "containerOrAwb": "Container No / AWB",
+      "mainId": "Order No",
+      "orderStatus": "Order Status",
+      "customs": "Customs Clearance",
+      "pickupCargo": "Pickup / Cargo",
+      "warehouseUsCa": "Warehouse / USA to Canada",
+      "createTime": "Create Time",
+      "note": "Note",
+      "actions": "Operate",
+      "updateService": "Update Service",
+      "detailStatus": "View Details",
+      "viewTrack": "View Track",
+      "view": "View"
+    },
+    "sections": {
+      "customsInfo": "Customs Clearance Info",
+      "logisticsInfo": "Logistics Info",
+      "warehouseInfo": "Warehouse Info",
+      "truckCustomsInfo": "Customs Clearance Info",
+      "truckLogisticsInfo": "Truck Logistics Info",
+      "truckUsCaInfo": "US to CA Info"
+    },
+    "columns": {
+      "importer": "Importer",
+      "containerNumber": "Container No",
+      "destination": "Destination",
+      "shipline": "Vessel",
+      "portEta": "Port ETA",
+      "trainEta": "Train ETA",
+      "awb": "Air No",
+      "airline": "Airline Company",
+      "eta": "ETA",
+      "draftCad": "Draft CAD",
+      "releaseCad": "Release CAD",
+      "cad": "CAD Status",
+      "iidStatus": "IID Status",
+      "customsStatusTime": "IID Status Update Time",
+      "orderStatus": "Order Status",
+      "status": "Status",
+      "pkNum": "PK Num",
+      "pickupDate": "Container Pickup Date",
+      "returnDate": "Container Return Date",
+      "process": "Process",
+      "crossBorderLocation": "Port of Entry",
+      "crossBorderTime": "Cross Border Time",
+      "transaction": "Transaction",
+      "destinationUs": "Destination US",
+      "transactionDate": "Transaction Date",
+      "shippingUnits": "Shipping Units",
+      "supervisionFee": "Supervision Fee",
+      "terminalCost": "Terminal Cost",
+      "supervisionWarehouse": "Supervised Warehouse",
+      "ata": "ATA",
+      "cargoArrivalTime": "Arrival time of truck",
+      "cargoPickupTime": "Truck pick-up time",
+      "fcl": "FCL",
+      "rail": "Rail",
+      "ers": "ERS",
+      "parse": "PARS",
+      "referenceNumber": "Reference Number",
+      "goWarehouse": "Is in Warehouse",
+      "cost": "Cost",
+      "plateNumber": "Plate Number",
+      "endJourney": "End Journey",
+      "customStatusTime": "Customs Clearance Status Update Time",
+      "weight": "Weight",
+      "departure": "Departure",
+      "truckCompany": "Truck Company",
+      "note": "Note",
+      "serviceType": "Service Type",
+      "createTime": "Create Time"
+    },
+    "tags": {
+      "newMessage": "New Message"
+    }
+  },
+  "state": {
+    "order": {
+      "pending": "Pending",
+      "reviewing": "Under Review",
+      "pendingSubmission": "Pending Submission",
+      "processing": "Processing",
+      "submitted": "Submitted",
+      "released": "Released",
+      "completed": "Completed",
+      "exception": "Exception",
+      "rejected": "Rejected",
+      "deletePending": "Pending Delete",
+      "deleted": "Deleted"
+    },
+    "cad": {
+      "notSubmit": "Not Submitted",
+      "submitted": "Submitted",
+      "agree": "Agreed",
+      "rejected": "Rejected",
+      "confirmTitle": "Confirm CAD",
+      "confirmHint": "Please confirm the CAD file.",
+      "decision": "Decision",
+      "rejectReason": "Reject Reason"
+    },
+    "customs": {
+      "notStarted": "Unclear Customs",
+      "docsSubmitted": "Data In Upload",
+      "inspecting": "Abnormal customs clearance (including ACI hold/reject/customs inspection)",
+      "cleared": "Customs Release",
+      "cbsaAccepted": "Accepted",
+      "cbsaRejected": "Rejected",
+      "cbsaReleased": "Released",
+      "cbsaExamRequired": "Exam Required",
+      "cbsaAcceptedWaiting": "Accepted / Waiting",
+      "cbsaAcceptedAwaitingCustoms": "Accepted / Awaiting Customs"
+    },
+    "logistics": {
+      "booked": "Booked",
+      "loaded": "Loaded",
+      "inTransit": "On Route"
+    },
+    "pickup": {
+      "booked": "Pickup Booked",
+      "inTransit": "In Transit",
+      "pendingComplete": "Pending Complete",
+      "deliveryCompleted": "Delivery Completed",
+      "totalCompleted": "Completed"
+    },
+    "warehouse": {
+      "arrived": "Arrived at Warehouse",
+      "inStorage": "In Storage",
+      "dispatched": "Dispatched",
+      "delivered": "Delivered"
+    },
+    "warehouseFlag": {
+      "inWarehouse": "In Warehouse",
+      "notInWarehouse": "Not In Warehouse"
+    }
+  },
+  "tracking": {
+    "title": "Tracking Timeline",
+    "events": "events",
+    "noData": "No tracking data",
+    "containerNo": "Container No",
+    "time": "Time",
+    "type": "Type",
+    "location": "Location",
+    "desc": "Description"
+  },
+  "changeService": {
+    "title": "Update Service",
+    "success": "Service updated successfully.",
+    "orderNo": "Order No",
+    "rules": {
+      "addAnytime": "You can add services at any time.",
+      "deleteWithinTwoHours": "Services can be deleted within 2 hours after creation.",
+      "afterTwoHours": "After 2 hours, deletion is not allowed and the service status will be changed to pending."
+    },
+    "action": {
+      "label": "Action",
+      "placeholder": "Select action",
+      "add": "Add Service",
+      "cancel": "Cancel Service"
+    },
+    "services": {
+      "title": "Services",
+      "hint": "Select services you want to add or cancel.",
+      "customs": "Customs Clearance",
+      "pickupMarine": "Container Pickup",
+      "pickupAir": "Cargo Collection",
+      "pickupTruck": "Pickup / Delivery",
+      "warehouse": "Warehousing",
+      "cargo": "Cargo"
+    },
+    "note": {
+      "label": "Additional Information",
+      "placeholder": "Enter additional information (optional)"
+    },
+    "actions": {
+      "close": "Close",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "errors": {
+      "missingUser": "Missing user id. Please login again.",
+      "required": "Please select an action and at least one service."
+    }
+  },
+  "files": {
+    "title": "Files",
+    "add": "Add",
+    "replace": "Replace",
+    "supportingDocuments": "Supporting Documents"
+  },
+  "chat": {
+    "title": "Client Message",
+    "send": "Send",
+    "notification": "Please enter your message in here",
+    "newMessage": "New Message",
+    "newClientMessage": "New Client Message",
+    "internalMessage": "Internal Message"
+  },
+  "captcha": {
+    "slide": "Hold and slide to prove you're human",
+    "notification": "Please complete the slider verification before signing in.",
+    "success": "Verified successfully"
+  },
+  "login": {
+    "signin": "Sign In",
+    "userName": "Username",
+    "password": "Password",
+    "enterUserName": "Enter username",
+    "enterPassword": "Enter Password",
+    "userNameRequired": "Please enter your username",
+    "passwordRequired": "Please enter your password"
+  },
+  "changePassword": {
+    "title": "Change Your Password",
+    "subtitle": "You're using a temporary password. Please set a new password to continue.",
+    "currentPassword": "Temporary Password",
+    "currentPasswordPlaceholder": "Enter your temporary password",
+    "currentPasswordGeneric": "Current Password",
+    "currentPasswordGenericPlaceholder": "Enter your current password",
+    "newPassword": "New Password",
+    "newPasswordPlaceholder": "Enter a new password",
+    "confirmPassword": "Confirm New Password",
+    "confirmPasswordPlaceholder": "Re-enter the new password",
+    "requirements": "At least 8 characters, including uppercase, lowercase, and a number.",
+    "showPasswords": "Show passwords",
+    "submit": "Change Password",
+    "allFieldsRequired": "Please fill in all fields.",
+    "mismatch": "New password and confirmation do not match.",
+    "sameAsCurrent": "The new password must be different from the current password.",
+    "success": "Password changed successfully. Redirecting to login…",
+    "profileSuccess": "Password changed successfully.",
+    "failed": "Failed to change password."
+  },
+  "work": {
+    "pin": "Approval PIN",
+    "showPin": "Show PIN",
+    "copy": "Copy",
+    "copied": "Copied",
+    "copyFailed": "Copy failed",
+    "hide": "Hide",
+    "loading": "Loading…",
+    "totalOrders": "Total Orders",
+    "pendingOrders": "Pending Orders",
+    "cityOrders": "City Order Counts",
+    "count": "Count",
+    "refresh": "Refresh",
+    "noData": "No data",
+    "exportAdditionalFee": "Export Additional Fee",
+    "exportInvoiceFee": "Export Invoice Fee",
+    "exporting": "Exporting…",
+    "exportNoData": "No data to export",
+    "exportSuccess": "Exported {n} records",
+    "exportFailed": "Export failed"
+  },
+  "serviceList": {
+    "filters": {
+      "selectClient": "Client",
+      "serviceType": "Service Type",
+      "pars": "PARS",
+      "containerNo": "Container No.",
+      "note": "Note",
+      "awb": "AWB",
+      "cadStatus": "CAD Status",
+      "customStatus": "Custom Status",
+      "portEta": "Port ETA",
+      "trainEta": "Train ETA",
+      "transaction": "Transaction",
+      "destination": "Destination",
+      "rail": "Rail",
+      "assignee": "Assignee",
+      "customStatusTime": "Custom Status Time",
+      "sortBy": "Sort By",
+      "ata": "ATA",
+      "cargoArrivalTime": "Cargo Arrival Time",
+      "cargoPickupTime": "Cargo Pickup Time",
+      "notifications": "Notifications",
+      "refresh": "Refresh",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "cadOptions": {
+      "notConfirmed": "Not Confirmed",
+      "confirmed": "Confirmed"
+    },
+    "table": {
+      "assignee": "Assignee",
+      "client": "Client",
+      "action": "Action",
+      "unassigned": "Select",
+      "noRecords": "No records found"
+    },
+    "tabs": {
+      "all": "ALL"
+    },
+    "pagination": {
+      "total": "Total",
+      "items": "items",
+      "perPage": "/ page",
+      "goto": "Go to",
+      "page": "page"
+    },
+    "columns": {
+      "anEmf": "AN/EMF",
+      "lastFreeDay": "Last Free Day",
+      "note": "Note",
+      "creator": "Creator"
+    },
+    "actions": {
+      "exportExcel": "Export Excel",
+      "uploadExcel": "Upload Excel",
+      "updateTrainEta": "Update Train ETA",
+      "uploading": "Uploading...",
+      "uploadSuccess": "Upload successful",
+      "uploadFailed": "Upload failed",
+      "exporting": "Exporting..."
+    },
+    "rejectNoteRequired": "Reject reason is required"
+  },
+  "logistic": {
+    "title": "Container Pickup",
+    "status": {
+      "all": "ALL",
+      "underReview": "Under Review",
+      "processing": "Processing",
+      "inTransit": "In Transit",
+      "pendingComplete": "Pending Complete",
+      "deliveryCompleted": "Delivery Completed",
+      "completed": "Completed",
+      "totalCompleted": "Total Completed",
+      "rejected": "Rejected",
+      "deletePending": "Pending Delete"
+    },
+    "goWarehouse": {
+      "dhWarehouse": "DH Warehouse",
+      "thirdParty": "Third Party",
+      "do": "D/O"
+    },
+    "filters": {
+      "pickupDate": "Pickup Date",
+      "completeTime": "Complete Time",
+      "needPickup": "Need Pickup",
+      "hasPickupNo": "Pickup No.",
+      "hasPkNum": "Has Pickup No.",
+      "noPkNum": "No Pickup No.",
+      "goWarehouse": "Go Warehouse"
+    },
+    "columns": {
+      "needPickup": "Need Pickup",
+      "goWarehouse": "Is in Warehouse",
+      "pickupNo": "Container Pickup No",
+      "pickupDate": "Date for Pickup",
+      "returnDate": "Date for Container Returned",
+      "telex": "Telex",
+      "containerStatus": "Process Status",
+      "createTime": "Create Time",
+      "completeTime": "Complete Time",
+      "warehouseArrivalDate": "Warehouse Arrival Date"
+    }
+  },
+  "truckUsaToCa": {
+    "serviceType": {
+      "usaToCa": "USA to CA",
+      "caToUsa": "CA to USA",
+      "dropship": "Dropship",
+      "fba": "FBA",
+      "firstMile": "First Mile",
+      "thirdParty": "3rd Party"
+    },
+    "goWarehouse": {
+      "yes": "In Warehouse",
+      "no": "Not In Warehouse"
+    }
+  },
+  "internalChat": {
+    "title": "Internal Chat",
+    "container": "Container: {number}",
+    "awb": "AWB: {awb}",
+    "loading": "Loading...",
+    "noData": "No data",
+    "placeholder": "Leave an internal message...",
+    "sending": "Sending...",
+    "send": "Send",
+    "invalidMention": "Invalid @ mention user"
+  },
+  "createUser": {
+    "title": "Create User",
+    "subtitle": "New Client Account",
+    "noPermission": "You do not have permission to create users.",
+    "fields": {
+      "username": "Username",
+      "password": "Password",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "phone": "Phone",
+      "email": "Email",
+      "company": "Company Name",
+      "currency": "Currency",
+      "billTerm": "Billing Term"
+    },
+    "billTermOptions": {
+      "perDeal": "Per Deal",
+      "monthly": "Monthly"
+    },
+    "validation": {
+      "usernameRequired": "Username is required",
+      "usernameEnglishOnly": "Username must contain English letters only",
+      "passwordRequired": "Password is required",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "phoneRequired": "Phone is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Enter a valid email address",
+      "companyRequired": "Company name is required",
+      "currencyRequired": "Please select a currency",
+      "billTermRequired": "Please select a billing term"
+    },
+    "submit": "Create User",
+    "reset": "Reset",
+    "back": "Back to User List"
+  },
+  "tollFee": {
+    "title": "TOLL Fee",
+    "locked": "Locked (30+ days after completion)",
+    "unlockPin": "Unlock with PIN",
+    "taskIdRequired": "task_id is required.",
+    "defaultContainer": "Default Container",
+    "available": "Available",
+    "profitRate": "Profit Rate",
+    "noProfitRate": "No profit rate",
+    "noContainer": "No container",
+    "noNotes": "No notes",
+    "notRecorded": "Not recorded",
+    "noAttachment": "No attachment",
+    "uploaded": "Uploaded",
+    "chooseFile": "Choose File",
+    "addRow": "Add Row",
+    "submitAll": "Submit All",
+    "select": "Select...",
+    "status": {
+      "processing": "Processing",
+      "finished": "Finished"
+    },
+    "col": {
+      "containerNumber": "Container Number",
+      "chargeTypes": "Types of Charges",
+      "quantity": "Quantity",
+      "rate": "Rate",
+      "currency": "Currency",
+      "notes": "Notes",
+      "record": "Record",
+      "arName": "AR Name",
+      "costAmount": "Cost Amount",
+      "vendor": "Vendor",
+      "invoiceNo": "Invoice No.",
+      "attachment": "Attachment",
+      "applicant": "Applicant",
+      "approve": "Approve",
+      "approver": "Approver",
+      "apName": "AP Name",
+      "operation": "Operation",
+      "status": "Status"
+    },
+    "toast": {
+      "unlocked": "Unlocked successfully.",
+      "incorrectPin": "Incorrect PIN. Please try again.",
+      "pinFailed": "PIN verification failed. Please try again.",
+      "locked": "This record is locked. Please unlock with your PIN first.",
+      "noPermissionApprove": "You do not have permission to approve this record.",
+      "selectContainer": "Please select a container number first.",
+      "approverLocked": "Approver cannot be unchecked once set.",
+      "saveApproverFailed": "Failed to save approver. Please try again.",
+      "noPermissionAp": "You do not have permission to set AP.",
+      "apLocked": "AP cannot be unchecked once set.",
+      "saveApFailed": "Failed to save AP. Please try again.",
+      "noPermissionAr": "You do not have permission to set AR.",
+      "arLocked": "AR cannot be unchecked once set.",
+      "saveArFailed": "Failed to save AR. Please try again.",
+      "noTaskId": "No task ID found. Please reload the page.",
+      "requireContainer": "Please select a container number for each row before submitting.",
+      "requireChargeType": "Please select a charge type for each row before submitting.",
+      "rowRequireFields": "Row {n}: Quantity, Rate, and Rate Currency are all required.",
+      "rowRequireRightFields": "Row {n}: Cost Amount, Cost Currency, Vendor, and Invoice No must all be filled together.",
+      "rowFileUploadFailed": "Row {n}: File upload failed. Please try again.",
+      "rowSaveFailed": "Row {n}: Save failed. Please check your connection and try again.",
+      "success": "All rows saved successfully.",
+      "submitFailed": "Submission failed. Please try again."
+    }
+  },
+  "paymentApproval": {
+    "title": "Payment/Expense Approval",
+    "locked": "Locked (30+ days after completion)",
+    "unlockPin": "Unlock with PIN",
+    "noContainer": "No container",
+    "noNotes": "No notes",
+    "notRecorded": "Not recorded",
+    "recorded": "Recorded",
+    "noAttachment": "No attachment",
+    "uploaded": "Uploaded",
+    "chooseFile": "Choose File",
+    "addRow": "Add Row",
+    "submitAll": "Submit All",
+    "select": "Select...",
+    "defaultContainer": "Default Container",
+    "available": "Available",
+    "col": {
+      "containerNumber": "Container Number",
+      "billTypes": "Types of Bills",
+      "amount": "Amount",
+      "currency": "Currency",
+      "attachment": "Attachment",
+      "notes": "Notes",
+      "applicant": "Applicant",
+      "approver": "Approver",
+      "approverName": "Approver Name",
+      "ap": "AP",
+      "apName": "AP Name",
+      "ar": "AR",
+      "arName": "AR Name",
+      "operation": "Operation"
+    },
+    "toast": {
+      "unlocked": "Unlocked successfully.",
+      "incorrectPin": "Incorrect PIN. Please try again.",
+      "pinFailed": "PIN verification failed. Please try again.",
+      "locked": "This record is locked. Please unlock with your PIN first.",
+      "noPermissionApprove": "You do not have permission to approve this record.",
+      "selectContainer": "Please select a container number first.",
+      "approverLocked": "Approver cannot be unchecked once set.",
+      "saveApproverFailed": "Failed to save approver. Please try again.",
+      "noPermissionAp": "You do not have permission to set AP.",
+      "apLocked": "AP cannot be unchecked once set.",
+      "saveApFailed": "Failed to save AP. Please try again.",
+      "noPermissionAr": "You do not have permission to set AR.",
+      "arLocked": "AR cannot be unchecked once set.",
+      "saveArFailed": "Failed to save AR. Please try again.",
+      "noTaskId": "No task ID found. Please reload the page.",
+      "requireContainer": "Please select a container number for each row before submitting.",
+      "requireFields": "Please complete all required fields (Type, Amount, Currency) for each row.",
+      "rowFileUploadFailed": "Row {n}: File upload failed. Please try again.",
+      "rowSaveFailed": "Row {n}: Save failed. Please check your connection and try again.",
+      "success": "All rows saved successfully.",
+      "submitFailed": "Submission failed. Please try again."
+    }
+  },
+  "notification": {
+    "title": "Notification",
+    "filters": {
+      "assignee": "Assignee",
+      "destination": "Destination",
+      "type": "Type",
+      "allAssignees": "All assignees",
+      "allCities": "All cities",
+      "allTypes": "All types",
+      "marine": "Marine",
+      "air": "Air",
+      "truck": "Truck",
+      "refresh": "Refresh",
+      "reset": "Reset"
+    },
+    "cad": {
+      "title": "CAD Draft Overdue",
+      "noMarine": "No overdue CAD marine",
+      "noAir": "No overdue CAD air",
+      "noTruck": "No overdue CAD truck"
+    },
+    "alerts": {
+      "title": "Pending Alerts",
+      "ftlTrain": "Marine — FTL Train ETA Overdue 24h",
+      "lclTrain": "Marine — LCL Train ETA Overdue 1 month",
+      "vanPort": "Marine — Vancouver Port ETA Overdue 2 days",
+      "truckPars": "Truck — PARS Pending",
+      "noFtl": "No FTL train overdue",
+      "noLcl": "No LCL train overdue",
+      "noVan": "No Vancouver port ETA overdue",
+      "noPars": "No truck PARS pending"
+    },
+    "poa": {
+      "title": "POA Pending Approval",
+      "viewFile": "View File",
+      "approve": "Approve",
+      "noPending": "No pending POA files"
+    }
+  },
+  "financeNotification": {
+    "title": "Finance Notification",
+    "filters": {
+      "taskId": "Task ID",
+      "containerNumber": "Container Number",
+      "createDate": "Create Date",
+      "refresh": "Refresh",
+      "reset": "Reset"
+    },
+    "alerts": {
+      "title": "Finance Alerts",
+      "missingFee": "Missing Container Fee After 7 Days",
+      "halfFee": "Half Filled Fee After 14 Days",
+      "negativeProfit": "Negative Profit Rate",
+      "portNoTrain": "Port ETA After 15 Days — No Train ETA",
+      "noMissingFee": "No missing container fee alerts",
+      "noHalfFee": "No half filled fee alerts",
+      "noNegativeProfit": "No negative profit alerts",
+      "noPortNoTrain": "No port ETA / train ETA alerts",
+      "noTrainEta": "No Train ETA",
+      "failedLoad": "Failed to load finance alerts"
+    }
+  },
+  "quote": {
+    "title": "Create Quote",
+    "pageTitle": "Quote",
+    "customer": "Customer",
+    "currency": "Currency",
+    "pod": "Port of Destination",
+    "province": "Province",
+    "selectProvince": "Select province",
+    "useTyped": "Use",
+    "typeToSearch": "Type to search, or enter a new city",
+    "selectProvinceFirstHint": "Select a province first",
+    "postcodePlaceholderExample": "e.g. M5V 2T6",
+    "fsaSuggestionsLabel": "Suggested postal codes:",
+    "fsaSuggestionsMore": "+{count} more — keep typing to narrow down",
+    "deliveryCity": "Delivery City",
+    "postcode": "Postcode",
+    "category": "Category",
+    "logisticsType": "Logistics Type",
+    "service": "Service",
+    "note": "Note",
+    "fee": "Fee",
+    "unit": "Unit",
+    "freeDays": "Free Days",
+    "freeHours": "Free Hours",
+    "additionalInfo": "Additional Information",
+    "address": "Address",
+    "dock": "Dock",
+    "addLine": "Add Line",
+    "addedLines": "Added Lines",
+    "generatePdf": "Generate PDF",
+    "generateTemplate": "Email Template",
+    "submitAll": "Submit All",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "noLinesYet": "No lines added yet",
+    "addDefaultCb": "Add Default CB Lines",
+    "addDefaultFcl": "Add Default FCL Lines",
+    "pickCategory": "Pick category",
+    "pickService": "Pick service",
+    "selectUnit": "Select unit",
+    "selectFreeAmount": "Select free amount",
+    "freeAmt": "Free amt",
+    "addressOptional": "Address optional",
+    "dockNo": "No",
+    "dockYes": "Yes",
+    "selectCustomer": "Select customer",
+    "deliveryCityPlaceholder": "Delivery city required",
+    "noPerm": "You do not have permission to submit.",
+    "duplicateTitle": "Duplicate Quote Detected",
+    "duplicateBody": "A duplicate quote already exists. Provide an effective date to override.",
+    "effectiveDate": "Effective Date",
+    "listTitle": "Quote List",
+    "newQuote": "+ New Quote",
+    "allCustomers": "All customers",
+    "search": "Search",
+    "reset": "Reset",
+    "noQuotes": "No quotes found",
+    "title1": "Sales Quotes",
+    "createDate": "Create Date",
+    "edit": "Edit",
+    "save": "Save",
+    "totalsLabel": "Totals",
+    "colCustomer": "Customer",
+    "colCategory": "Category",
+    "colService": "Service (EN | 中文)",
+    "colAction": "Action",
+    "colEffectiveDate": "Effective Date",
+    "pageSize": "Per page",
+    "errFeeRequired": "Fee is required.",
+    "errLogisticsFcl": "Please select Logistics and FCL first.",
+    "errSelectCustomer": "Please select customer first.",
+    "errDeliveryCity": "Delivery city is required.",
+    "errPostcode": "Postcode is required.",
+    "errInvalidPostcode": "Invalid Canadian postcode format. Example: M5V 2T6",
+    "errCbExists": "CB default lines already exist.",
+    "cbAdded": "{count} CB default lines added.",
+    "errFclExists": "FCL default lines already exist.",
+    "fclAdded": "{count} FCL default lines added.",
+    "errPleaseFill": "Please fill: {fields}",
+    "errNoSalesId": "Logged-in sales user ID not found.",
+    "errCustomerRequired": "Customer is required.",
+    "errAddOneLine": "Please add at least one line.",
+    "errLineCategory": "Line {n}: Category is required.",
+    "errLineService": "Line {n}: Service is required.",
+    "errLineFee": "Line {n}: Fee is required.",
+    "errLineCity": "Line {n}: Delivery city is required.",
+    "errLinePostcode": "Line {n}: Postcode is required.",
+    "errLineInvalidPostcode": "Line {n}: Invalid Canadian postcode format. Example: M5V 2T6",
+    "errCancelled": "Submission cancelled.",
+    "errLineFailed": "Failed on line {n}.",
+    "successSubmitted": "All quote lines submitted!",
+    "errNoPdfPopup": "Please allow pop-ups to generate PDF.",
+    "pdfTitle": "Sales Quote",
+    "pdfCustomer": "Customer",
+    "pdfDate": "Date",
+    "pdfCurrency": "Currency",
+    "pdfFooter": "This quote is for reference and is subject to confirmation.",
+    "pdfColCategory": "Category",
+    "pdfColService": "Service",
+    "pdfColNote": "Note",
+    "pdfColFee": "Fee",
+    "pdfColAddress": "Address",
+    "pdfColPod": "Port of Destination",
+    "pdfColCity": "Delivery City",
+    "pdfColPostcode": "Postcode",
+    "pdfColDock": "Dock"
+  },
+  "supportTickets": {
+    "edit": {
+      "title": "Edit Ticket",
+      "copyLink": "Copy Link",
+      "linkCopied": "Link copied to clipboard."
+    },
+    "submit": {
+      "title": "Submit IT Support Ticket",
+      "missingFields": "Subject and description are required.",
+      "noUser": "Unable to identify your account. Please log in again.",
+      "failed": "Failed to submit ticket.",
+      "submitting": "Submitting...",
+      "submit": "Submit Ticket",
+      "success": "Ticket {ticket} submitted successfully.",
+      "viewTickets": "View my tickets"
+    },
+    "fields": {
+      "subject": "Subject",
+      "note": "Description",
+      "type": "Type",
+      "priority": "Priority",
+      "requester": "Requester",
+      "selectUser": "Select a user",
+      "assignTo": "Assign To",
+      "unassigned": "Unassigned",
+      "attachments": "Attachments (images, PDF, Excel, CSV, ZIP — up to 10 files, 20MB each)"
+    },
+    "replies": {
+      "title": "Activity / Replies",
+      "legacyResponse": "Previous solution note",
+      "empty": "No replies yet.",
+      "placeholder": "Write a reply...",
+      "pasteHint": "Tip: paste a screenshot (Ctrl+V) to attach it.",
+      "send": "Send",
+      "internalNote": "Internal note (not visible to requester)",
+      "internalBadge": "Internal",
+      "requester": "Requester",
+      "support": "Support",
+      "loadFailed": "Failed to load replies."
+    },
+    "type": {
+      "general": "General",
+      "hardware": "Hardware",
+      "software": "Software",
+      "network": "Network",
+      "accessAccount": "Account & Access",
+      "lingxing": "领星系统"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "status": {
+      "open": "Open",
+      "inProgress": "In Progress",
+      "onHold": "On Hold",
+      "resolved": "Resolved",
+      "closed": "Closed"
+    },
+    "list": {
+      "title": "Support Tickets",
+      "searchLabel": "Search",
+      "searchPlaceholder": "Search by ticket #, subject, or description",
+      "total": "Total",
+      "noData": "No tickets found",
+      "loadFailed": "Failed to load tickets.",
+      "ticketNotFound": "Ticket not found.",
+      "onlyMine": "Only tickets involving me (assigned to or created by me)",
+      "statusActive": "Active (Open / In Progress)",
+      "columns": {
+        "ticketNumber": "Ticket #",
+        "subject": "Subject",
+        "requester": "Requester",
+        "type": "Type",
+        "priority": "Priority",
+        "status": "Status",
+        "assignedTo": "Assigned To",
+        "created": "Created",
+        "actions": "Actions"
+      }
+    }
+  },
+  "userList": {
+    "title": "User List",
+    "searchLabel": "Company Name",
+    "searchPlaceholder": "Search by company name",
+    "total": "Total",
+    "noData": "No records found",
+    "exportExcel": "Export Excel",
+    "exporting": "Exporting...",
+    "noPermission": "You do not have permission to view this page.",
+    "columns": {
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "currency": "Currency",
+      "salesName": "Sales Name",
+      "action": "Action",
+      "detail": "Detail"
+    }
+  },
+  "userInfo": {
+    "title": "User Details",
+    "clientInfo": "Client Information",
+    "notFound": "User not found.",
+    "back": "Back to User List",
+    "fields": {
+      "userId": "User ID",
+      "username": "Username",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "phone": "Phone",
+      "email": "Email",
+      "company": "Company",
+      "currency": "Currency",
+      "billTerm": "Billing Term",
+      "created": "Created",
+      "clientType": "Client Type",
+      "typeNA": "NA",
+      "typeSalesClient": "Sales Client",
+      "typeCompanyClient": "Company Client"
+    }
+  },
+  "importer": {
+    "sectionTitle": "Importers & Documents",
+    "searchPlaceholder": "Search importer…",
+    "addBtn": "+ Add Importer",
+    "cancelBtn": "Cancel",
+    "nameLabel": "Importer Name",
+    "namePlaceholder": "e.g. ABC Imports Inc.",
+    "poaFileLabel": "POA File (PDF, optional)",
+    "addSubmit": "Add",
+    "noImporters": "No importers found. Click \"+ Add Importer\" to create one.",
+    "noMatch": "No importers match",
+    "gstDuty": "GST/DUTY",
+    "yes": "Yes",
+    "no": "No",
+    "update": "Update",
+    "upload": "Upload",
+    "gstUpdated": "GST/DUTY updated",
+    "gstFailed": "Failed to update GST/DUTY",
+    "addedOk": "Importer added",
+    "addFailed": "Failed to add importer",
+    "fileUpdated": "File updated",
+    "fileFailed": "File update failed",
+    "nameRequired": "Importer name is required"
+  },
+  "sales": {
+    "addtitle": "Assign Sales",
+    "selectSales": "Select Sales",
+    "pickSales": "Please select a sales user",
+    "submit": "Submit",
+    "refresh": "Refresh",
+    "salesName": "Sales Name",
+    "customerName": "Customer Name",
+    "createDate": "Create Date",
+    "salesLists": "Assigned Sales",
+    "noTicket": "No records",
+    "assignedOk": "Assigned successfully",
+    "noPerm": "No permission"
+  },
+  "fileUpload": {
+    "choose": "Choose File",
+    "dragOrClick": "Drag & drop files here, or click to browse",
+    "disabled": "Uploading is disabled",
+    "remove": "Remove",
+    "tooLarge": "File is too large (max {size}).",
+    "limitReached": "You can attach at most {count} files."
+  },
+  "sop": {
+    "pageTitle": "SOP Management",
+    "searchPlaceholder": "Search SOPs...",
+    "allCategories": "All",
+    "addCategory": "Add Category",
+    "categoryName": "Category Name",
+    "uploadSop": "Upload SOP",
+    "noItems": "No SOPs found.",
+    "total": "Total",
+    "loadFailed": "Failed to load SOPs.",
+    "noUser": "Unable to identify your account. Please log in again.",
+    "noCategories": "No categories yet — add one first.",
+    "departments": {
+      "public": "Public"
+    },
+    "categories": {
+      "onboarding": "Onboarding",
+      "productTraining": "Product Training",
+      "toolsSystems": "Tools & Systems",
+      "other": "Other",
+      "sop": "SOP",
+      "customsCompliance": "Customs & Compliance",
+      "policiesBenefits": "Policies & Benefits",
+      "performanceReviews": "Performance Reviews",
+      "expenseReimbursement": "Expense & Reimbursement",
+      "reportingCompliance": "Reporting & Compliance",
+      "fulfillmentSop": "Fulfillment SOP",
+      "supportSop": "Support SOP"
+    },
+    "materialType": {
+      "all": "All Types",
+      "video": "Video",
+      "document": "Document",
+      "videoWithDocuments": "Video + Documents",
+      "other": "Other"
+    },
+    "category": {
+      "failed": "Failed to add category.",
+      "rename": "Rename Category",
+      "renameFailed": "Failed to rename category.",
+      "delete": "Delete Category",
+      "deleteConfirm": "Delete the category \"{name}\"?",
+      "deleteHint": "A category can only be deleted when no SOPs are using it. Default categories cannot be deleted.",
+      "deleteSuccess": "Category deleted.",
+      "deleteFailed": "Failed to delete category."
+    },
+    "publicLock": {
+      "close": "Close Uploads",
+      "open": "Open Uploads",
+      "closed": "Public SOP uploads are now closed.",
+      "opened": "Public SOP uploads are now open.",
+      "failed": "Failed to update upload setting.",
+      "hint": "When closed, no one can upload to the Public library.",
+      "notice": "Uploads to the Public SOP library are currently closed by an administrator."
+    },
+    "fields": {
+      "title": "Title",
+      "category": "Category",
+      "description": "Description",
+      "videoFile": "Video File",
+      "videoHint": "Optional. MP4/WebM/MOV, up to 1 GB.",
+      "thumbnail": "Cover Image",
+      "documents": "Documents",
+      "documentsHint": "PDF, Word, Excel, PowerPoint, images — up to 10 files, 100 MB each.",
+      "contentHint": "Add a document, a video, or both — at least one is required."
+    },
+    "upload": {
+      "title": "Upload SOP",
+      "submit": "Upload",
+      "missingFields": "Please enter a title and choose a category.",
+      "needContent": "Add at least one video or document file.",
+      "success": "SOP uploaded successfully.",
+      "failed": "Failed to upload SOP."
+    },
+    "edit": {
+      "currentFiles": "Current Files",
+      "replaceVideo": "Replace Video (optional)",
+      "replaceThumbnail": "Replace Cover Image (optional)",
+      "addDocuments": "Add Documents (optional)",
+      "remove": "Remove",
+      "titleRequired": "Title cannot be empty.",
+      "success": "SOP updated successfully.",
+      "failed": "Failed to update SOP."
+    },
+    "details": {
+      "back": "Back to SOP Library",
+      "notFound": "SOP not found.",
+      "noVideo": "No video for this SOP.",
+      "noDescription": "No description provided.",
+      "documents": "Documents",
+      "download": "Open / Download",
+      "officeNoPreview": "This file can't be previewed in the browser — download to open it.",
+      "uploadedBy": "Uploaded by",
+      "uploadedAt": "Uploaded at",
+      "views": "Views",
+      "copyLink": "Copy Share Link",
+      "linkCopied": "Link copied to clipboard.",
+      "edit": "Edit",
+      "delete": "Delete",
+      "deleteConfirm": "Are you sure you want to delete this SOP? This cannot be undone.",
+      "deleted": "SOP deleted.",
+      "deleteFailed": "Failed to delete SOP."
+    }
+  }
+}

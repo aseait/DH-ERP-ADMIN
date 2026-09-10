@@ -1,0 +1,43 @@
+:root {
+  --md-bg: #f6f8fb;
+  --md-card: #ffffff;
+  --md-soft: #fbfcfe;
+
+  --md-text: #101828;
+  --md-muted: #667085;
+
+  --md-border: rgba(16, 24, 40, 0.08);
+  --md-border-strong: rgba(16, 24, 40, 0.12);
+
+  --md-primary: #1570ef;
+  --md-primary-soft: rgba(46, 144, 250, 0.12);
+
+  --md-danger: #b42318;
+
+  --md-radius-xl: 16px;
+  --md-radius-lg: 14px;
+  --md-radius-md: 12px;
+  --md-radius-sm: 10px;
+
+  --md-shadow: 0 10px 28px rgba(16, 24, 40, 0.08);
+
+  // Match the app-wide base ($font-size-base: 0.825rem) so the order-detail
+  // pages read at the same size as every other page.
+  --md-font: 0.825rem;
+  --md-font-sm: 12px;
+  --md-font-xs: 11px;
+}
+
+[data-bs-theme="dark"] {
+  --md-bg: #1a1d21;
+  --md-card: #22272e;
+  --md-soft: #2d333b;
+
+  --md-text: #e9ecef;
+  --md-muted: #8b949e;
+
+  --md-border: rgba(255, 255, 255, 0.08);
+  --md-border-strong: rgba(255, 255, 255, 0.12);
+
+  --md-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+}

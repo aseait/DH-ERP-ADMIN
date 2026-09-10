@@ -1,0 +1,9 @@
+node_modules
+build
+.git
+.gitignore
+Dockerfile*
+docker-compose.*
+npm-debug.log
+yarn.lock
+coverage

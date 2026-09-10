@@ -1,0 +1,431 @@
+.lm-root {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Trigger */
+.lm-trigger {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.lm-trigger__btn {
+  border-radius: 12px !important;
+  padding: 10px 14px !important;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.lm-trigger__dot {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.18);
+}
+
+/* Drawer */
+.lm-drawer {
+  width: 520px !important;
+  border: 0 !important;
+  box-shadow: 0 18px 50px rgba(16, 24, 40, 0.18) !important;
+}
+
+.lm-body {
+  height: 100%;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+/* Header */
+.lm-header {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.9), #fff);
+}
+
+.lm-title {
+  font-size: 16px;
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.lm-subtitle {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.lm-header__right {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lm-iconBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.lm-iconBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(16, 24, 40, 0.12);
+}
+
+.lm-menu {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.14);
+  padding: 8px;
+  min-width: 220px;
+}
+
+.lm-menu--search {
+  min-width: 300px;
+}
+
+.lm-menu__item {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 10px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: #0f172a;
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.lm-menu__item:hover {
+  background: rgba(15, 23, 42, 0.06);
+}
+
+/* Search */
+.lm-search {
+  position: relative;
+}
+
+.lm-search__input {
+  border-radius: 12px !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  padding: 10px 36px 10px 12px !important;
+  background: #f8fafc !important;
+}
+
+.lm-search__icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+}
+
+/* Content */
+.lm-content {
+  flex: 1;
+  min-height: 0;
+  background: linear-gradient(180deg, #ffffff, #fbfdff);
+}
+
+.lm-scroll {
+  height: 100%;
+}
+
+.lm-scrollInner {
+  height: 100%;
+  padding: 14px 14px 12px;
+}
+
+.lm-state {
+  padding: 28px;
+  color: #64748b;
+  text-align: center;
+  font-weight: 700;
+}
+
+.lm-empty {
+  padding: 28px 12px;
+  color: #94a3b8;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* Message list */
+.lm-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lm-row {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.lm-row.is-mine {
+  justify-content: flex-end;
+}
+
+.lm-row.is-other {
+  justify-content: flex-start;
+}
+
+.lm-bubble {
+  max-width: 78%;
+  border-radius: 16px;
+  padding: 10px 12px;
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.lm-row.is-mine .lm-bubble {
+  background: linear-gradient(180deg, rgba(13, 110, 253, 0.12), rgba(13, 110, 253, 0.06));
+}
+
+.lm-row.is-other .lm-bubble {
+  background: #f1f5f9;
+}
+
+.lm-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.lm-sender {
+  font-size: 12px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.lm-time {
+  font-size: 11px;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.lm-text {
+  font-size: 14px;
+  color: #0f172a;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+}
+
+/* Composer */
+.lm-composer {
+  position: relative;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  padding: 12px 14px;
+  background: #fff;
+}
+
+.lm-composer__input {
+  border-radius: 14px !important;
+  border: 1px solid rgba(15, 23, 42, 0.1) !important;
+  background: #f8fafc !important;
+  padding: 12px !important;
+  resize: none;
+}
+
+// Floating @mention suggestion popup — anchored above the composer via
+// .lm-composer's position:relative, so it overlays instead of pushing the
+// textarea down. Previously had no base styling at all (only dark-mode
+// color overrides existed with nothing underneath to override).
+.lm-mention-panel {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: calc(100% + 6px);
+  z-index: 20;
+  max-height: 220px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
+  padding: 4px;
+}
+
+.lm-mention-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.12s;
+
+  &:hover {
+    background: rgba(64, 158, 255, 0.08);
+  }
+}
+
+.lm-mention-name {
+  font-weight: 600;
+  font-size: 13.5px;
+  color: #1f2937;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lm-mention-type {
+  flex: none;
+  font-size: 11.5px;
+  color: #6b7688;
+  background: #f1f4f8;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.lm-mention-tag {
+  display: inline-block;
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.1);
+  padding: 1px 6px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.lm-composer__actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lm-sendBtn {
+  border-radius: 12px !important;
+  padding: 10px 16px !important;
+  font-weight: 900;
+  min-width: 120px;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .lm-drawer {
+    width: 100% !important;
+  }
+  .lm-bubble {
+    max-width: 90%;
+  }
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] {
+  .lm-body {
+    background: #1e2328;
+  }
+
+  .lm-header {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), #1e2328);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .lm-title { color: #e9ecef; }
+  .lm-subtitle { color: #8b949e; }
+
+  .lm-iconBtn {
+    background: #2d333b;
+    border-color: rgba(255, 255, 255, 0.08);
+    color: #adbac7;
+  }
+
+  .lm-menu {
+    background: #22272e;
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .lm-menu__item {
+    color: #adbac7;
+    &:hover { background: rgba(255, 255, 255, 0.06); }
+  }
+
+  .lm-search__input {
+    background: #2d333b !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    color: #e9ecef !important;
+  }
+
+  .lm-content {
+    background: linear-gradient(180deg, #1e2328, #1a1d21);
+  }
+
+  .lm-state { color: #8b949e; }
+  .lm-empty { color: #6e7681; }
+
+  .lm-bubble {
+    border-color: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .lm-row.is-mine .lm-bubble {
+    background: linear-gradient(180deg, rgba(13, 110, 253, 0.22), rgba(13, 110, 253, 0.12));
+  }
+
+  .lm-row.is-other .lm-bubble {
+    background: #2d333b;
+  }
+
+  .lm-sender { color: #e9ecef; }
+  .lm-time { color: #8b949e; }
+  .lm-text { color: #e9ecef; }
+
+  .lm-composer {
+    background: #1e2328;
+    border-top-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .lm-composer__input {
+    background: #2d333b !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: #e9ecef !important;
+    &::placeholder { color: #6e7681; }
+  }
+
+  .lm-mention-panel {
+    background: #22272e;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .lm-mention-item {
+    &:hover { background: rgba(255, 255, 255, 0.08); }
+  }
+
+  .lm-mention-name { color: #e9ecef; }
+  .lm-mention-type {
+    color: #8b949e;
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .lm-mention-tag {
+    color: #58a6ff;
+    background: rgba(88, 166, 255, 0.12);
+  }
+}
