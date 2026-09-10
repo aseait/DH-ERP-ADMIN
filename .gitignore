@@ -27,4 +27,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# use npm only - see README
+yarn.lock
+
 nul
